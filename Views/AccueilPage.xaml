@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="EXAM_MAUI.Views.AccueilPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:EXAM_MAUI"
+    xmlns:vm="clr-namespace:EXAM_MAUI.ViewModels"
+    Shell.NavBarIsVisible="False"
+    x:DataType="vm:AccueilViewModel"
+    mc:Ignorable="d">
+    <ContentPage.Content>
+        <StackLayout
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+                <Border VerticalOptions="Start" Padding="20" Margin="0,20,0,0" StrokeShape="RoundRectangle 40,0,0,40" BackgroundColor="#40000000">
+                    <Label Text="Meubles Guillon" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="20" />
+                </Border>
+                <Button
+                    Command="{x:Bind LoginCommand}"
+                    Style="{StaticResource PrimaryAction}"
+                    Text="Login" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

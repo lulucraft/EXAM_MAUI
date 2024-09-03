@@ -1,0 +1,77 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = EXAM_MAUI
+build_property.ProjectDir = E:\Users\lucas\source\repos\EXAM_MAUI\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[E:/Users/lucas/source/repos/EXAM_MAUI/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EXAM_MAUI.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[E:/Users/lucas/source/repos/EXAM_MAUI/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EXAM_MAUI.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[E:/Users/lucas/source/repos/EXAM_MAUI/Controls/DateTimePicker.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EXAM_MAUI.Controls.DateTimePicker.xaml
+build_metadata.AdditionalFiles.TargetPath = Controls\DateTimePicker.xaml
+build_metadata.AdditionalFiles.RelativePath = Controls\DateTimePicker.xaml
+
+[E:/Users/lucas/source/repos/EXAM_MAUI/Resources/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EXAM_MAUI.Resources.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Colors.xaml
+
+[E:/Users/lucas/source/repos/EXAM_MAUI/Resources/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EXAM_MAUI.Resources.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles.xaml
+
+[E:/Users/lucas/source/repos/EXAM_MAUI/Views/AccueilPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EXAM_MAUI.Views.AccueilPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AccueilPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AccueilPage.xaml
+
+[E:/Users/lucas/source/repos/EXAM_MAUI/Views/AgentPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EXAM_MAUI.Views.AgentPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AgentPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AgentPage.xaml
+
+[E:/Users/lucas/source/repos/EXAM_MAUI/Views/NewEventPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EXAM_MAUI.Views.NewEventPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\NewEventPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\NewEventPage.xaml
+
+[E:/Users/lucas/source/repos/EXAM_MAUI/Views/SearchPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EXAM_MAUI.Views.SearchPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SearchPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SearchPage.xaml
+
+[E:/Users/lucas/source/repos/EXAM_MAUI/Views/SettingsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EXAM_MAUI.Views.SettingsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SettingsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SettingsPage.xaml

@@ -1,0 +1,824 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EXAM_MAUI</name>
+    </assembly>
+    <members>
+        <member name="T:EXAM_MAUI.Helpers.FontAwesomeIcons">
+            <summary>
+            Classe générée avec https://andreinitescu.github.io/IconFont2Code puis adaptée
+            En suivant la doc de https://cedricgabrang.medium.com/custom-fonts-material-design-icons-in-net-maui-acf59c9f98fe
+            Et en récupérant la font de https://fontawesome.com/download ou https://github.com/FortAwesome/font-awesome-sass/blob/master/assets/fonts/font-awesome/fa-solid-900.ttf
+            </summary>
+        </member>
+        <member name="T:EXAM_MAUI.Helpers.MaterialDesignIcons">
+            <summary>
+            Classe générée avec https://andreinitescu.github.io/IconFont2Code
+            En suivant la doc de https://cedricgabrang.medium.com/custom-fonts-material-design-icons-in-net-maui-acf59c9f98fe
+            Et en récupérant la font de https://github.com/Templarian/MaterialDesign-Webfont/blob/master/fonts/materialdesignicons-webfont.ttf
+            </summary>
+        </member>
+        <member name="T:EXAM_MAUI.Models.Event">
+            <inheritdoc/>
+        </member>
+        <member name="P:EXAM_MAUI.Models.Event.Name">
+            <inheritdoc cref="F:EXAM_MAUI.Models.Event._name"/>
+        </member>
+        <member name="P:EXAM_MAUI.Models.Event.Location">
+            <inheritdoc cref="F:EXAM_MAUI.Models.Event.location"/>
+        </member>
+        <member name="P:EXAM_MAUI.Models.Event.StartsAt">
+            <inheritdoc cref="F:EXAM_MAUI.Models.Event._startsAt"/>
+        </member>
+        <member name="P:EXAM_MAUI.Models.Event.EndsAt">
+            <inheritdoc cref="F:EXAM_MAUI.Models.Event._endsAt"/>
+        </member>
+        <member name="P:EXAM_MAUI.Models.Event.Notes">
+            <inheritdoc cref="F:EXAM_MAUI.Models.Event._notes"/>
+        </member>
+        <member name="M:EXAM_MAUI.Services.AppService.GetService(System.Type)">
+            <summary>
+            Gets the service object of the specified type.
+            </summary>
+            <param name="serviceType">An object that specifies the type of service object to get.</param>
+            <returns>A service object of type <paramref name="serviceType"/>. -or- null if there is no service object of type <paramref name="serviceType"/>.</returns>
+        </member>
+        <member name="M:EXAM_MAUI.Services.AppService.GetService``1">
+            <summary>
+            Get service of type <typeparamref name="TService"/> from the System.IServiceProvider.
+            </summary>
+            <typeparam name="TService">The type of service object to get.</typeparam>
+            <returns>A service object of type <typeparamref name="TService"/> or null if there is no such service.</returns>
+        </member>
+        <member name="T:EXAM_MAUI.ViewModels.AccueilViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="F:EXAM_MAUI.ViewModels.AccueilViewModel.loginCommand">
+            <summary>The backing field for <see cref="P:EXAM_MAUI.ViewModels.AccueilViewModel.LoginCommand"/>.</summary>
+        </member>
+        <member name="P:EXAM_MAUI.ViewModels.AccueilViewModel.LoginCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:EXAM_MAUI.ViewModels.AccueilViewModel.LoginAsync"/>.</summary>
+        </member>
+        <member name="T:EXAM_MAUI.ViewModels.AgentViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="F:EXAM_MAUI.ViewModels.AgentViewModel.addEventCommand">
+            <summary>The backing field for <see cref="P:EXAM_MAUI.ViewModels.AgentViewModel.AddEventCommand"/>.</summary>
+        </member>
+        <member name="P:EXAM_MAUI.ViewModels.AgentViewModel.AddEventCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:EXAM_MAUI.ViewModels.AgentViewModel.AddEventAsync"/>.</summary>
+        </member>
+        <member name="T:EXAM_MAUI.ViewModels.BaseViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:EXAM_MAUI.ViewModels.BaseViewModel.Title">
+            <inheritdoc cref="F:EXAM_MAUI.ViewModels.BaseViewModel._title"/>
+        </member>
+        <member name="T:EXAM_MAUI.ViewModels.NewEventViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:EXAM_MAUI.ViewModels.NewEventViewModel.Event">
+            <inheritdoc cref="F:EXAM_MAUI.ViewModels.NewEventViewModel._event"/>
+        </member>
+        <member name="F:EXAM_MAUI.ViewModels.NewEventViewModel.saveCommand">
+            <summary>The backing field for <see cref="P:EXAM_MAUI.ViewModels.NewEventViewModel.SaveCommand"/>.</summary>
+        </member>
+        <member name="P:EXAM_MAUI.ViewModels.NewEventViewModel.SaveCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:EXAM_MAUI.ViewModels.NewEventViewModel.SaveAsync"/>.</summary>
+        </member>
+        <member name="F:EXAM_MAUI.ViewModels.NewEventViewModel.cancelCommand">
+            <summary>The backing field for <see cref="P:EXAM_MAUI.ViewModels.NewEventViewModel.CancelCommand"/>.</summary>
+        </member>
+        <member name="P:EXAM_MAUI.ViewModels.NewEventViewModel.CancelCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:EXAM_MAUI.ViewModels.NewEventViewModel.CancelAsync"/>.</summary>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_DatePicker.TextColorTo(Microsoft.Maui.Controls.DatePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Editor.TextColorTo(Microsoft.Maui.Controls.Editor,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Entry.TextColorTo(Microsoft.Maui.Controls.Entry,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_InputView.TextColorTo(Microsoft.Maui.Controls.InputView,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Label.TextColorTo(Microsoft.Maui.Controls.Label,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Picker.TextColorTo(Microsoft.Maui.Controls.Picker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_RadioButton.TextColorTo(Microsoft.Maui.Controls.RadioButton,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_SearchBar.TextColorTo(Microsoft.Maui.Controls.SearchBar,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_TimePicker.TextColorTo(Microsoft.Maui.Controls.TimePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="T:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_EntryCell">
+            <summary>
+            Extension Methods for <see cref="T:Microsoft.Maui.ITextAlignment"/>
+            </summary>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_EntryCell.TextStart``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Start"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Start"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_EntryCell.TextCenterHorizontal``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Center"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Center"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_EntryCell.TextEnd``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.End"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.End"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_EntryCell.TextTop``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.VerticalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Start"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Start"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_EntryCell.TextCenterVertical``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.VerticalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Center"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Center"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_EntryCell.TextBottom``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.VerticalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.End"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.End"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_EntryCell.TextCenter``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.VerticalTextAlignment"/> = <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Center"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Center"/></returns>
+        </member>
+        <member name="T:CommunityToolkit.Maui.Markup.LeftToRight.TextAlignmentExtensions_EntryCell">
+            <summary>
+            Extension Methods for <see cref="T:Microsoft.Maui.ITextAlignment"/>
+            </summary>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.LeftToRight.TextAlignmentExtensions_EntryCell.TextLeft``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Start"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with <see cref="F:Microsoft.Maui.TextAlignment.Start"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.LeftToRight.TextAlignmentExtensions_EntryCell.TextRight``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.End"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with <see cref="F:Microsoft.Maui.TextAlignment.End"/></returns>
+        </member>
+        <member name="T:CommunityToolkit.Maui.Markup.LeftToRight.TextAlignmentExtensions_Editor">
+            <summary>
+            Extension Methods for <see cref="T:Microsoft.Maui.ITextAlignment"/>
+            </summary>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.LeftToRight.TextAlignmentExtensions_Editor.TextLeft``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Start"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with <see cref="F:Microsoft.Maui.TextAlignment.Start"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.LeftToRight.TextAlignmentExtensions_Editor.TextRight``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.End"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with <see cref="F:Microsoft.Maui.TextAlignment.End"/></returns>
+        </member>
+        <member name="T:CommunityToolkit.Maui.Markup.LeftToRight.TextAlignmentExtensions_Entry">
+            <summary>
+            Extension Methods for <see cref="T:Microsoft.Maui.ITextAlignment"/>
+            </summary>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.LeftToRight.TextAlignmentExtensions_Entry.TextLeft``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Start"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with <see cref="F:Microsoft.Maui.TextAlignment.Start"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.LeftToRight.TextAlignmentExtensions_Entry.TextRight``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.End"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with <see cref="F:Microsoft.Maui.TextAlignment.End"/></returns>
+        </member>
+        <member name="T:CommunityToolkit.Maui.Markup.LeftToRight.TextAlignmentExtensions_Label">
+            <summary>
+            Extension Methods for <see cref="T:Microsoft.Maui.ITextAlignment"/>
+            </summary>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.LeftToRight.TextAlignmentExtensions_Label.TextLeft``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Start"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with <see cref="F:Microsoft.Maui.TextAlignment.Start"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.LeftToRight.TextAlignmentExtensions_Label.TextRight``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.End"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with <see cref="F:Microsoft.Maui.TextAlignment.End"/></returns>
+        </member>
+        <member name="T:CommunityToolkit.Maui.Markup.LeftToRight.TextAlignmentExtensions_Picker">
+            <summary>
+            Extension Methods for <see cref="T:Microsoft.Maui.ITextAlignment"/>
+            </summary>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.LeftToRight.TextAlignmentExtensions_Picker.TextLeft``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Start"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with <see cref="F:Microsoft.Maui.TextAlignment.Start"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.LeftToRight.TextAlignmentExtensions_Picker.TextRight``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.End"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with <see cref="F:Microsoft.Maui.TextAlignment.End"/></returns>
+        </member>
+        <member name="T:CommunityToolkit.Maui.Markup.LeftToRight.TextAlignmentExtensions_SearchBar">
+            <summary>
+            Extension Methods for <see cref="T:Microsoft.Maui.ITextAlignment"/>
+            </summary>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.LeftToRight.TextAlignmentExtensions_SearchBar.TextLeft``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Start"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with <see cref="F:Microsoft.Maui.TextAlignment.Start"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.LeftToRight.TextAlignmentExtensions_SearchBar.TextRight``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.End"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with <see cref="F:Microsoft.Maui.TextAlignment.End"/></returns>
+        </member>
+        <member name="T:CommunityToolkit.Maui.Markup.RightToLeft.TextAlignmentExtensions_EntryCell">
+            <summary>
+            Extension methods for <see cref="T:Microsoft.Maui.ITextAlignment"/>
+            </summary>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.RightToLeft.TextAlignmentExtensions_EntryCell.TextLeft``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.End"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with <see cref="F:Microsoft.Maui.TextAlignment.End"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.RightToLeft.TextAlignmentExtensions_EntryCell.TextRight``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Start"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with <see cref="F:Microsoft.Maui.TextAlignment.Start"/></returns>
+        </member>
+        <member name="T:CommunityToolkit.Maui.Markup.RightToLeft.TextAlignmentExtensions_Editor">
+            <summary>
+            Extension methods for <see cref="T:Microsoft.Maui.ITextAlignment"/>
+            </summary>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.RightToLeft.TextAlignmentExtensions_Editor.TextLeft``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.End"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with <see cref="F:Microsoft.Maui.TextAlignment.End"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.RightToLeft.TextAlignmentExtensions_Editor.TextRight``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Start"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with <see cref="F:Microsoft.Maui.TextAlignment.Start"/></returns>
+        </member>
+        <member name="T:CommunityToolkit.Maui.Markup.RightToLeft.TextAlignmentExtensions_Entry">
+            <summary>
+            Extension methods for <see cref="T:Microsoft.Maui.ITextAlignment"/>
+            </summary>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.RightToLeft.TextAlignmentExtensions_Entry.TextLeft``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.End"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with <see cref="F:Microsoft.Maui.TextAlignment.End"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.RightToLeft.TextAlignmentExtensions_Entry.TextRight``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Start"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with <see cref="F:Microsoft.Maui.TextAlignment.Start"/></returns>
+        </member>
+        <member name="T:CommunityToolkit.Maui.Markup.RightToLeft.TextAlignmentExtensions_Label">
+            <summary>
+            Extension methods for <see cref="T:Microsoft.Maui.ITextAlignment"/>
+            </summary>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.RightToLeft.TextAlignmentExtensions_Label.TextLeft``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.End"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with <see cref="F:Microsoft.Maui.TextAlignment.End"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.RightToLeft.TextAlignmentExtensions_Label.TextRight``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Start"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with <see cref="F:Microsoft.Maui.TextAlignment.Start"/></returns>
+        </member>
+        <member name="T:CommunityToolkit.Maui.Markup.RightToLeft.TextAlignmentExtensions_Picker">
+            <summary>
+            Extension methods for <see cref="T:Microsoft.Maui.ITextAlignment"/>
+            </summary>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.RightToLeft.TextAlignmentExtensions_Picker.TextLeft``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.End"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with <see cref="F:Microsoft.Maui.TextAlignment.End"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.RightToLeft.TextAlignmentExtensions_Picker.TextRight``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Start"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with <see cref="F:Microsoft.Maui.TextAlignment.Start"/></returns>
+        </member>
+        <member name="T:CommunityToolkit.Maui.Markup.RightToLeft.TextAlignmentExtensions_SearchBar">
+            <summary>
+            Extension methods for <see cref="T:Microsoft.Maui.ITextAlignment"/>
+            </summary>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.RightToLeft.TextAlignmentExtensions_SearchBar.TextLeft``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.End"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with <see cref="F:Microsoft.Maui.TextAlignment.End"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.RightToLeft.TextAlignmentExtensions_SearchBar.TextRight``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Start"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with <see cref="F:Microsoft.Maui.TextAlignment.Start"/></returns>
+        </member>
+        <member name="T:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Editor">
+            <summary>
+            Extension Methods for <see cref="T:Microsoft.Maui.ITextAlignment"/>
+            </summary>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Editor.TextStart``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Start"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Start"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Editor.TextCenterHorizontal``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Center"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Center"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Editor.TextEnd``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.End"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.End"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Editor.TextTop``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.VerticalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Start"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Start"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Editor.TextCenterVertical``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.VerticalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Center"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Center"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Editor.TextBottom``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.VerticalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.End"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.End"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Editor.TextCenter``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.VerticalTextAlignment"/> = <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Center"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Center"/></returns>
+        </member>
+        <member name="T:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Entry">
+            <summary>
+            Extension Methods for <see cref="T:Microsoft.Maui.ITextAlignment"/>
+            </summary>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Entry.TextStart``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Start"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Start"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Entry.TextCenterHorizontal``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Center"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Center"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Entry.TextEnd``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.End"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.End"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Entry.TextTop``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.VerticalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Start"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Start"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Entry.TextCenterVertical``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.VerticalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Center"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Center"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Entry.TextBottom``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.VerticalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.End"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.End"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Entry.TextCenter``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.VerticalTextAlignment"/> = <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Center"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Center"/></returns>
+        </member>
+        <member name="T:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Label">
+            <summary>
+            Extension Methods for <see cref="T:Microsoft.Maui.ITextAlignment"/>
+            </summary>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Label.TextStart``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Start"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Start"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Label.TextCenterHorizontal``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Center"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Center"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Label.TextEnd``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.End"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.End"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Label.TextTop``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.VerticalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Start"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Start"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Label.TextCenterVertical``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.VerticalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Center"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Center"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Label.TextBottom``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.VerticalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.End"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.End"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Label.TextCenter``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.VerticalTextAlignment"/> = <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Center"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Center"/></returns>
+        </member>
+        <member name="T:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Picker">
+            <summary>
+            Extension Methods for <see cref="T:Microsoft.Maui.ITextAlignment"/>
+            </summary>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Picker.TextStart``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Start"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Start"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Picker.TextCenterHorizontal``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Center"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Center"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Picker.TextEnd``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.End"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.End"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Picker.TextTop``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.VerticalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Start"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Start"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Picker.TextCenterVertical``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.VerticalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Center"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Center"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Picker.TextBottom``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.VerticalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.End"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.End"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_Picker.TextCenter``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.VerticalTextAlignment"/> = <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Center"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Center"/></returns>
+        </member>
+        <member name="T:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_SearchBar">
+            <summary>
+            Extension Methods for <see cref="T:Microsoft.Maui.ITextAlignment"/>
+            </summary>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_SearchBar.TextStart``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Start"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Start"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_SearchBar.TextCenterHorizontal``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Center"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Center"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_SearchBar.TextEnd``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.End"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.End"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_SearchBar.TextTop``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.VerticalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Start"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Start"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_SearchBar.TextCenterVertical``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.VerticalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Center"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Center"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_SearchBar.TextBottom``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.VerticalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.End"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.End"/></returns>
+        </member>
+        <member name="M:CommunityToolkit.Maui.Markup.TextAlignmentExtensions_SearchBar.TextCenter``1(``0)">
+            <summary>
+            <see cref="P:Microsoft.Maui.ITextAlignment.VerticalTextAlignment"/> = <see cref="P:Microsoft.Maui.ITextAlignment.HorizontalTextAlignment"/> = <see cref="F:Microsoft.Maui.TextAlignment.Center"/>
+            </summary>
+            <param name="textAlignmentControl"></param>
+            <returns><typeparamref name="TAssignable"/> with added <see cref="F:Microsoft.Maui.TextAlignment.Center"/></returns>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Name" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Location">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Location" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.StartsAt">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "StartsAt" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.EndsAt">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "EndsAt" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Notes">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Notes" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Event">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Event" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Name" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Location">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Location" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.StartsAt">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "StartsAt" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.EndsAt">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "EndsAt" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Notes">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Notes" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Event">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Event" generated properties.</summary>
+        </member>
+    </members>
+</doc>

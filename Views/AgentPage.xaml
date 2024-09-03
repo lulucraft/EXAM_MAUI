@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="EXAM_MAUI.Views.AgentPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:EXAM_MAUI"
+    xmlns:vm="clr-namespace:EXAM_MAUI.ViewModels"
+    x:DataType="vm:AgentViewModel"
+    mc:Ignorable="d">
+    <ContentPage.Content>
+        <StackLayout
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+            <Grid RowDefinitions="*,40">
+                <Border VerticalOptions="Start" Padding="20" Margin="0,20,0,0" StrokeShape="RoundRectangle 40,0,0,40" BackgroundColor="#40000000">
+                    <Label Text="Module Agent" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="20" />
+                </Border>
+                <StackLayout Padding="20">
+                    <Label Text="Saisir le code de l'invité:"
+                        FontSize="24"
+                        HorizontalOptions="Center" />
+
+                    <Entry x:Name="CodeEntry"
+                        Placeholder="Entrez le code ici"
+                        Keyboard="Numeric"
+                        FontSize="20"
+                        Margin="0,20,0,0" />
+
+                    <Button Text="Valider"
+                        FontSize="20"
+                        BackgroundColor="DodgerBlue"
+                        TextColor="White"
+                        CornerRadius="5"
+                        Clicked="OnValidateClicked" />
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

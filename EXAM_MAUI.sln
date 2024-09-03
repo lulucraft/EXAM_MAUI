@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31611.283
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EXAM_MAUI", "EXAM_MAUI.csproj", "{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F9B793C0-0F67-42A9-866A-DBD7A952236C}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Packages.props = Directory.Packages.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EXAM_MAUI.Context", "..\EXAM_MAUI.Context\EXAM_MAUI.Context.csproj", "{D2290258-2E85-4F69-A664-7435F7F9DF22}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D2290258-2E85-4F69-A664-7435F7F9DF22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2290258-2E85-4F69-A664-7435F7F9DF22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2290258-2E85-4F69-A664-7435F7F9DF22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2290258-2E85-4F69-A664-7435F7F9DF22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		        SolutionGuid = {1ED34889-B8C2-4E34-9CDC-C01F33E518EC}
+		SolutionGuid = {3BD3162A-0E00-4E94-855A-72333051E624}
+	EndGlobalSection
+EndGlobal
