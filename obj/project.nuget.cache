@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nfMXuwk7UCo=",
+  "dgSpecHash": "1p1KSSO5IYE=",
   "success": true,
   "projectFilePath": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\EXAM_MAUI.csproj",
   "expectedPackageFiles": [
@@ -76,6 +76,10 @@
     "C:\\Users\\lucas\\.nuget\\packages\\runtime.unix.system.private.uri\\4.3.0\\runtime.unix.system.private.uri.4.3.0.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\runtime.win.system.diagnostics.debug\\4.3.0\\runtime.win.system.diagnostics.debug.4.3.0.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\runtime.win7.system.private.uri\\4.3.0\\runtime.win7.system.private.uri.4.3.0.nupkg.sha512",
+    "C:\\Users\\lucas\\.nuget\\packages\\syncfusion.licensing\\26.2.12\\syncfusion.licensing.26.2.12.nupkg.sha512",
+    "C:\\Users\\lucas\\.nuget\\packages\\syncfusion.maui.calendar\\26.2.12\\syncfusion.maui.calendar.26.2.12.nupkg.sha512",
+    "C:\\Users\\lucas\\.nuget\\packages\\syncfusion.maui.core\\26.2.12\\syncfusion.maui.core.26.2.12.nupkg.sha512",
+    "C:\\Users\\lucas\\.nuget\\packages\\syncfusion.maui.popup\\26.2.12\\syncfusion.maui.popup.26.2.12.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.1\\system.configuration.configurationmanager.6.0.1.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",

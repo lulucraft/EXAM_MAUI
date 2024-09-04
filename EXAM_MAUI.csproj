@@ -67,6 +67,7 @@
         <PackageReference Include="CommunityToolkit.Maui.Markup" Version="4.*" />
         <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
         <PackageReference Include="CompiledBindings.MAUI" Version="1.*" />
+        <PackageReference Include="Syncfusion.Maui.Calendar" Version="26.2.12" />
     </ItemGroup>
 
     <ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">
@@ -84,5 +85,14 @@
       <Compile Update="Views\AgentPage.xaml.cs">
         <DependentUpon>AgentsPage.xaml</DependentUpon>
       </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <MauiXaml Update="Views\EditionEvenementPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </MauiXaml>
+      <MauiXaml Update="Views\OrganisateurPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </MauiXaml>
     </ItemGroup>
 </Project>

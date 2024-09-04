@@ -15,6 +15,7 @@ namespace EXAM_MAUI.Views
 	partial class AccueilPage
 	{
 		private global::Microsoft.Maui.Controls.Button button1;
+		private global::Microsoft.Maui.Controls.Button button2;
 		private bool _generatedCodeInitialized;
 
 		private void InitializeAfterConstructor()
@@ -25,6 +26,7 @@ namespace EXAM_MAUI.Views
 			_generatedCodeInitialized = true;
 
 			button1 = global::Microsoft.Maui.Controls.NameScopeExtensions.FindByName<global::Microsoft.Maui.Controls.Button>(this, "button1");
+			button2 = global::Microsoft.Maui.Controls.NameScopeExtensions.FindByName<global::Microsoft.Maui.Controls.Button>(this, "button2");
 
 
 			this.BindingContextChanged += this_BindingContextChanged;
@@ -75,13 +77,26 @@ namespace EXAM_MAUI.Views
 			public void Update()
 			{
 				var dataRoot = _dataRoot;
-				Update0_LoginCommand(dataRoot);
+				Update0(dataRoot);
 			}
 
-			private void Update0_LoginCommand(global::EXAM_MAUI.ViewModels.AccueilViewModel value)
+			private void Update0(global::EXAM_MAUI.ViewModels.AccueilViewModel value)
 			{
-#line (21, 21) - (21, 51) 21 "..\..\..\..\..\Views\AccueilPage.xaml"
-				_targetRoot.button1.Command = value.LoginCommand;
+				Update0_AgentsCommand(value);
+				Update0_EvenementsCommand(value);
+			}
+
+			private void Update0_AgentsCommand(global::EXAM_MAUI.ViewModels.AccueilViewModel value)
+			{
+#line (24, 21) - (24, 52) 24 "..\..\..\..\..\Views\AccueilPage.xaml"
+				_targetRoot.button1.Command = value.AgentsCommand;
+#line default
+			}
+
+			private void Update0_EvenementsCommand(global::EXAM_MAUI.ViewModels.AccueilViewModel value)
+			{
+#line (33, 21) - (33, 56) 33 "..\..\..\..\..\Views\AccueilPage.xaml"
+				_targetRoot.button2.Command = value.EvenementsCommand;
 #line default
 			}
 
@@ -114,9 +129,18 @@ namespace EXAM_MAUI.Views
 					}
 
 					var typedSender = (global::EXAM_MAUI.ViewModels.AccueilViewModel)sender;
-					if (string.IsNullOrEmpty(e.PropertyName) || e.PropertyName == "LoginCommand")
+					switch (e.PropertyName)
 					{
-						bindings.Update0_LoginCommand(typedSender);
+						case null:
+						case "":
+							bindings.Update0(typedSender);
+							break;
+						case "AgentsCommand":
+							bindings.Update0_AgentsCommand(typedSender);
+							break;
+						case "EvenementsCommand":
+							bindings.Update0_EvenementsCommand(typedSender);
+							break;
 					}
 				}
 			}

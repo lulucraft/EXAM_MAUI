@@ -189,6 +189,10 @@
               "target": "Package",
               "version": "[8.0.8, )",
               "autoReferenced": true
+            },
+            "Syncfusion.Maui.Calendar": {
+              "target": "Package",
+              "version": "[26.2.12, )"
             }
           },
           "imports": [
@@ -248,6 +252,10 @@
               "target": "Package",
               "version": "[8.0.8, )",
               "autoReferenced": true
+            },
+            "Syncfusion.Maui.Calendar": {
+              "target": "Package",
+              "version": "[26.2.12, )"
             }
           },
           "imports": [
@@ -301,6 +309,10 @@
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
               "version": "[8.*, )"
+            },
+            "Syncfusion.Maui.Calendar": {
+              "target": "Package",
+              "version": "[26.2.12, )"
             }
           },
           "imports": [

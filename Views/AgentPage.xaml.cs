@@ -2,7 +2,7 @@
 {
     public partial class AgentPage : ContentPage
     {
-        public AgentPage(AccueilViewModel viewModel)
+        public AgentPage(AgentViewModel viewModel)
         {
             InitializeComponent();
             viewModel.Title = "Agents";

@@ -5,37 +5,58 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
     xmlns:local="clr-namespace:EXAM_MAUI"
     xmlns:vm="clr-namespace:EXAM_MAUI.ViewModels"
     x:DataType="vm:AgentViewModel"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    BackgroundImageSource="{AppThemeBinding Light=fond_agent.jpg, Dark=fond_agent_noir.jpg}">
+
     <ContentPage.Content>
-        <StackLayout
-            HorizontalOptions="Center"
-            VerticalOptions="Center">
-            <Grid RowDefinitions="*,40">
-                <Border VerticalOptions="Start" Padding="20" Margin="0,20,0,0" StrokeShape="RoundRectangle 40,0,0,40" BackgroundColor="#40000000">
-                    <Label Text="Module Agent" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="20" />
-                </Border>
-                <StackLayout Padding="20">
-                    <Label Text="Saisir le code de l'invité:"
-                        FontSize="24"
-                        HorizontalOptions="Center" />
+        <Frame
+            Padding="25"
+            Margin="20"
+            BorderColor="White"
+            CornerRadius="20"
+            HasShadow="True"
+            BackgroundColor="#80000000">
+            <StackLayout Grid.Row="1" Padding="25" VerticalOptions="Center">
 
-                    <Entry x:Name="CodeEntry"
-                        Placeholder="Entrez le code ici"
-                        Keyboard="Numeric"
-                        FontSize="20"
-                        Margin="0,20,0,0" />
+                <Grid Grid.Row="0" Padding="40" Margin="0,40,0,0" MaximumWidthRequest="1000">
+                    <Border VerticalOptions="Start" StrokeShape="RoundRectangle 40,0,0,40" BackgroundColor="#40000000">
+                        <Label Text="Module Agent" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="32" />
+                    </Border>
+                </Grid>
 
-                    <Button Text="Valider"
-                        FontSize="20"
-                        BackgroundColor="DodgerBlue"
+                <HorizontalStackLayout HorizontalOptions="Center" WidthRequest="300">
+                    <Label Text="Saisir le code de l'invité :"
+                        FontSize="25"
+                        HorizontalOptions="Center"
                         TextColor="White"
-                        CornerRadius="5"
-                        Clicked="OnValidateClicked" />
-                </StackLayout>
-            </Grid>
-        </StackLayout>
+                        MaximumWidthRequest="500" />
+                </HorizontalStackLayout>
+
+                <Entry
+                        Placeholder="Entrez le code à 6 caractères"
+                        PlaceholderColor="White"
+                        Keyboard="Text"
+                        MaxLength="6"
+                        FontSize="25"
+                        MaximumWidthRequest="500"
+                        Text="{Binding InputCode, Mode=TwoWay}"
+                        TextColor="White" />
+
+                <Button
+                        Text="Valider"
+                        Command="{Binding ValiderCommand}"
+                        CommandParameter="{Binding InputCode}"
+                        Style="{StaticResource PrimaryAction}"
+                        FontSize="20"
+                        MaximumWidthRequest="400"
+                        HeightRequest="60"
+                        Padding="20"
+                        Margin="0, 50, 0, 0" />
+            </StackLayout>
+        </Frame>
     </ContentPage.Content>
 </ContentPage>

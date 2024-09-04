@@ -2,7 +2,9 @@
 using EXAM_MAUI.Services.Implementations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Syncfusion.Maui.Core.Hosting;
 
 namespace EXAM_MAUI
 {
@@ -24,18 +26,17 @@ namespace EXAM_MAUI
 
             builder.Services.AddSingleton<IDialogService, DialogService>();
             builder.Services.AddSingleton<INavigationService, NavigationService>();
-            builder.Services.AddSingleton<SearchViewModel>();
-            builder.Services.AddSingleton<SearchPage>();
-            builder.Services.AddSingleton<SettingsViewModel>();
-            builder.Services.AddSingleton<SettingsPage>();
-            builder.Services.AddTransient<NewEventViewModel>();
-            builder.Services.AddTransient<NewEventPage>();
 
             builder.Services.AddSingleton<IInviteService, InviteService>();
+            builder.Services.AddSingleton<IEvenementService, EvenementService>();
             builder.Services.AddTransient<AccueilViewModel>();
             builder.Services.AddTransient<AccueilPage>();
             builder.Services.AddSingleton<AgentViewModel>();
             builder.Services.AddSingleton<AgentPage>();
+            builder.Services.AddSingleton<OrganisateurViewModel>();
+            builder.Services.AddSingleton<OrganisateurPage>();
+            builder.Services.AddSingleton<EditionEvenementViewModel>();
+            builder.Services.AddSingleton<EditionEvenementPage>();
 
             // Ajouter la configuration des secrets utilisateur
             var configuration = new ConfigurationBuilder()
@@ -44,8 +45,9 @@ namespace EXAM_MAUI
             builder.Configuration.AddConfiguration(configuration);
 
             // Configurer le contexte de base de données
-            object dbContext = builder.Services.AddDbContext<ArkoneLajContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+            //object dbContext = builder.Services.AddDbContext<ArkoneLajContext>(options =>
+            //    options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+            object dbContext = builder.Services.AddDbContext<ArkoneLajContext>(ServiceLifetime.Transient);
 
             // Enregistrer le service de configuration pour l'injection de dépendances
             builder.Services.AddSingleton<IConfiguration>(configuration);

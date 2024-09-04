@@ -9,18 +9,34 @@
     xmlns:vm="clr-namespace:EXAM_MAUI.ViewModels"
     Shell.NavBarIsVisible="False"
     x:DataType="vm:AccueilViewModel"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    BackgroundImageSource="{AppThemeBinding Light=fond.jpg, Dark=fond.jpg}">
     <ContentPage.Content>
         <StackLayout
             HorizontalOptions="Center"
             VerticalOptions="Center">
-                <Border VerticalOptions="Start" Padding="20" Margin="0,20,0,0" StrokeShape="RoundRectangle 40,0,0,40" BackgroundColor="#40000000">
-                    <Label Text="Meubles Guillon" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="20" />
-                </Border>
+            <Border VerticalOptions="Start" Padding="20" Margin="0,20,0,0" StrokeShape="RoundRectangle 40,0,0,40" BackgroundColor="#40000000">
+                <Label Text="EXAM MAUI" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="20" />
+            </Border>
+
+            <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
                 <Button
-                    Command="{x:Bind LoginCommand}"
+                    Command="{x:Bind AgentsCommand}"
                     Style="{StaticResource PrimaryAction}"
-                    Text="Login" />
+                    Text="Module Agents"
+                    WidthRequest="250"
+                    HeightRequest="50"
+                    FontSize="17"
+                    />
+
+                <Button
+                    Command="{x:Bind EvenementsCommand}"
+                    Style="{StaticResource PrimaryAction}"
+                    Text="Module Organisateurs"
+                    WidthRequest="250"
+                    HeightRequest="50"
+                    FontSize="17"/>
+            </HorizontalStackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

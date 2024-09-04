@@ -58,20 +58,14 @@ build_metadata.AdditionalFiles.ManifestResourceName = EXAM_MAUI.Views.AgentPage.
 build_metadata.AdditionalFiles.TargetPath = Views\AgentPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\AgentPage.xaml
 
-[E:/Users/lucas/source/repos/EXAM_MAUI/Views/NewEventPage.xaml]
+[E:/Users/lucas/source/repos/EXAM_MAUI/Views/EditionEvenementPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = EXAM_MAUI.Views.NewEventPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\NewEventPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\NewEventPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EXAM_MAUI.Views.EditionEvenementPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EditionEvenementPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EditionEvenementPage.xaml
 
-[E:/Users/lucas/source/repos/EXAM_MAUI/Views/SearchPage.xaml]
+[E:/Users/lucas/source/repos/EXAM_MAUI/Views/OrganisateurPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = EXAM_MAUI.Views.SearchPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\SearchPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\SearchPage.xaml
-
-[E:/Users/lucas/source/repos/EXAM_MAUI/Views/SettingsPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = EXAM_MAUI.Views.SettingsPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\SettingsPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\SettingsPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EXAM_MAUI.Views.OrganisateurPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\OrganisateurPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\OrganisateurPage.xaml

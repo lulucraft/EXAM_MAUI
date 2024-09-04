@@ -3,6 +3,9 @@
     public partial class AccueilViewModel(IDialogService dialogService, INavigationService navigationService) : BaseViewModel(dialogService, navigationService)
     {
         [RelayCommand]
-        private Task LoginAsync() => NavigationService.GoToAsync("//home");
+        private Task AgentsAsync() => NavigationService.GoToAsync(nameof(AgentPage));
+        
+        [RelayCommand]
+        private Task EvenementsAsync() => NavigationService.GoToAsync(nameof(OrganisateurPage));
     }
 }

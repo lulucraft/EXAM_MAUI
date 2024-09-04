@@ -1,7 +1,28 @@
-﻿namespace EXAM_MAUI
+﻿using Syncfusion.Maui.Themes;
+
+namespace EXAM_MAUI
 {
     public partial class AppShell : Shell
     {
+        //[ObservableProperty]
+        //public bool isDarkMode;
+
+        private bool isDarkMode;
+
+        public bool IsDarkMode
+        {
+            get => isDarkMode;
+            set
+            {
+                if (isDarkMode != value)
+                {
+                    isDarkMode = value;
+                    OnPropertyChanged();
+                    ChangeTheme(isDarkMode);
+                }
+            }
+        }
+
         public AppShell()
         {
             InitializeComponent();
@@ -11,12 +32,37 @@
 
         private void RegisterRoutes()
         {
-            Routing.RegisterRoute("newevent", typeof(NewEventPage));
+            Routing.RegisterRoute(nameof(AgentPage), typeof(AgentPage));
+            Routing.RegisterRoute(nameof(OrganisateurPage), typeof(OrganisateurPage));
+            Routing.RegisterRoute(nameof(EditionEvenementPage), typeof(EditionEvenementPage));
         }
 
-        private async void OnMenuItemClicked(object sender, EventArgs e)
+        //private void OnThemeToggled(object sender, ToggledEventArgs e)
+        //{
+        //    if (e.Value) // Dark Mode enabled
+        //    {
+        //        App.Current.Resources.MergedDictionaries.Clear();
+        //        App.Current.Resources.MergedDictionaries.Add(new DarkThemeColors());
+        //    }
+        //    else // Light Mode enabled
+        //    {
+        //        App.Current.Resources.MergedDictionaries.Clear();
+        //        App.Current.Resources.MergedDictionaries.Add(new LightThemeColors());
+        //    }
+        //}
+
+        private void ChangeTheme(bool isDarkMode)
         {
-            await Current.GoToAsync("//login");
+            if (isDarkMode)
+            {
+                Current.Resources.MergedDictionaries.Clear();
+                Current.Resources.MergedDictionaries.Add(new DarkThemeColors());
+            }
+            else
+            {
+                Current.Resources.MergedDictionaries.Clear();
+                Current.Resources.MergedDictionaries.Add(new LightThemeColors());
+            }
         }
     }
 }

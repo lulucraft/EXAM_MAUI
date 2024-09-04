@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="EXAM_MAUI.Views.OrganisateurPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    xmlns:helpers="clr-namespace:EXAM_MAUI.Helpers"
+    xmlns:vm="clr-namespace:EXAM_MAUI.ViewModels"
+    xmlns:conv="clr-namespace:EXAM_MAUI.Converters"
+    xmlns:local="clr-namespace:EXAM_MAUI.Views"
+    xmlns:m="clr-namespace:EXAM_MAUI.Context.Models;assembly=EXAM_MAUI.Context"
+    x:DataType="vm:OrganisateurViewModel"
+    mc:Ignorable="d">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <conv:PaginationGreaterThanOneConverter x:Key="GreatherThanOne"/>
+        </ResourceDictionary>
+        <ResourceDictionary>
+            <conv:PaginationLessThanTotalPagesConverter x:Key="LessThanTotal"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior
+            EventName="Appearing"
+            Command="{Binding ActualiserCommand}" />
+    </ContentPage.Behaviors>
+
+    <ContentPage.Content>
+        <StackLayout
+            HorizontalOptions="Center"
+            VerticalOptions="Center" Padding="10">
+            <Grid RowDefinitions="Auto,*">
+                <!-- Header en haut -->
+                <Grid Grid.Row="0" ColumnDefinitions="2*,2*,*,*" HeightRequest="50" VerticalOptions="CenterAndExpand">
+                    <Label Grid.Column="0" Text="Nom de l'événement" FontAttributes="Bold" TextColor="{StaticResource Yellow200Accent}" VerticalOptions="Center" />
+                    <Label Grid.Column="1" Text="Lieu de l'événement" FontAttributes="Bold" TextColor="{StaticResource Yellow200Accent}" VerticalOptions="Center" />
+                    <Label Grid.Column="2" Text="Date de l'événement" FontAttributes="Bold" TextColor="{StaticResource Yellow200Accent}" VerticalOptions="Center" WidthRequest="100" />
+                    <Label Grid.Column="3" Text="Nombre d'invités" FontAttributes="Bold" TextColor="{StaticResource Yellow200Accent}" VerticalOptions="Center" />
+                </Grid>
+                <!-- Ligne séparatrice -->
+                <BoxView Grid.Row="0" Grid.ColumnSpan="4" HeightRequest="1" VerticalOptions="End" Color="{StaticResource Yellow100Accent}" />
+
+                <!-- ScrollView contenant le CollectionView -->
+                <ScrollView Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" WidthRequest="800" HeightRequest="500">
+                    <CollectionView ItemsSource="{Binding Evenements}">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate x:DataType="m:Evenement">
+                                <Grid ColumnDefinitions="2*,2*,*,*,*" HeightRequest="50" VerticalOptions="CenterAndExpand">
+                                    <Label Grid.Column="0" Text="{Binding Nom}" VerticalOptions="Center" />
+                                    <Label Grid.Column="1" Text="{Binding LieuEvenement}" VerticalOptions="Center" />
+                                    <Label Grid.Column="2" Text="{Binding DateEvenement}" VerticalOptions="Center" WidthRequest="100" />
+                                    <Label Grid.Column="3" Text="{Binding NbInvites}" VerticalOptions="Center" />
+                                    <Button Grid.Column="4" FontFamily="MaterialDesignIcons" Text="{x:Static helpers:MaterialDesignIcons.Pencil}" FontSize="26" Padding="4"
+                                            Command="{Binding EditerEvenementCommand, Source={RelativeSource AncestorType={x:Type vm:OrganisateurViewModel}}}"
+                                            CommandParameter="{Binding .}" VerticalOptions="Center" Margin="4" BackgroundColor="{StaticResource Tertiary}" />
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </ScrollView>
+            </Grid>
+
+            <!-- Pagination -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10" Margin="10">
+                <Button Text="Précédent"
+                    Command="{Binding PreviousPageCommand}"
+                    IsEnabled="True"
+                    />
+                    <!--IsEnabled="{Binding Path=PageNumber, Converter={StaticResource GreatherThanOne}}"-->
+                <!--{Binding PageDisplay}-->
+                <Label Text="{Binding Path=PageNumber, StringFormat='{0}/{1}', Mode=OneWay}" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center" />
+
+                <Button Text="Suivant"
+                    Command="{Binding NextPageCommand}"
+                    IsEnabled="True"
+                    />
+                <!--IsEnabled="{Binding Path=PageNumber, Converter={StaticResource LessThanTotal}}"-->
+            </StackLayout>
+
+            <HorizontalStackLayout Grid.Row="1" HorizontalOptions="Center" Margin="0,15,0,0">
+                <Button Text="Ajouter un nouveau événement" Command="{Binding AjouterEvenementCommand}"
+                        HorizontalOptions="Center" Style="{StaticResource PrimaryAction}">
+                    <Button.ImageSource>
+                        <FontImageSource FontFamily="MaterialDesignIcons" Glyph="{x:Static helpers:MaterialDesignIcons.Creation}" Size="26" />
+                    </Button.ImageSource>
+                </Button>
+            </HorizontalStackLayout>
+            <Label Grid.Row="3" Text="{Binding Evenements.Count, StringFormat='{0:N0} evenements listés'}"
+                   HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Italic" Margin="2,0" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
