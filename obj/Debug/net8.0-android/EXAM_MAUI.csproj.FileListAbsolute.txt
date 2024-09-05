@@ -105,8 +105,6 @@ E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-android\EXAM_MAUI.Generat
 E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-android\EXAM_MAUI.AssemblyInfoInputs.cache
 E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-android\EXAM_MAUI.AssemblyInfo.cs
 E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-android\EXAM_MAUI.csproj.CoreCompileInputs.cache
-E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-android\Views\AccueilPage.g.m.cs
-E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-android\CompiledBindingsHelper.MAUI.cs
 E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-android\EXAM_MAUI.sourcelink.json
 E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-android\EXAM_MAUI.dll
 E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-android\EXAM_MAUI.pdb
@@ -2348,3 +2346,5 @@ C:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-android\stamp\_ConvertRes
 C:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
+E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-android\resizetizer\r\drawable\fond_agent.jpg.old
+E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-android\resizetizer\r\drawable\fond_agent_noir.jpg.old

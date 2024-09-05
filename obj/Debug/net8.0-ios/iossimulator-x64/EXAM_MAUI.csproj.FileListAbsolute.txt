@@ -48,8 +48,6 @@ E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-ios\iossimulator-x64\EXAM
 E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-ios\iossimulator-x64\EXAM_MAUI.AssemblyInfoInputs.cache
 E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-ios\iossimulator-x64\EXAM_MAUI.AssemblyInfo.cs
 E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-ios\iossimulator-x64\EXAM_MAUI.csproj.CoreCompileInputs.cache
-E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-ios\iossimulator-x64\Views\AccueilPage.g.m.cs
-E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-ios\iossimulator-x64\CompiledBindingsHelper.MAUI.cs
 E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-ios\iossimulator-x64\EXAM_MAUI.sourcelink.json
 E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-ios\iossimulator-x64\EXAM_MAUI.dll
 E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-ios\iossimulator-x64\refint\EXAM_MAUI.dll
@@ -717,3 +715,6 @@ C:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-ios\iossimulator-x64\refi
 C:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-ios\iossimulator-x64\EXAM_MAUI.pdb
 C:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-ios\iossimulator-x64\EXAM_MAUI.genruntimeconfig.cache
 C:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-ios\iossimulator-x64\ref\EXAM_MAUI.dll
+E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\fond_agent_noir.jpg.old
+E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\fond_agent.jpg.old
+E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-ios\iossimulator-x64\build-signature\signature

@@ -23,7 +23,6 @@ E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10
 E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-SemiBold.ttf
 E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fond_agent.scale-100.jpg
 E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fond.scale-100.jpg
-E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fond_agent_noir.scale-100.jpg
 E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png
 E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png
 E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png
@@ -80,8 +79,6 @@ E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10
 E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\EXAM_MAUI.AssemblyInfoInputs.cache
 E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\EXAM_MAUI.AssemblyInfo.cs
 E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\EXAM_MAUI.csproj.CoreCompileInputs.cache
-E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Views\AccueilPage.g.m.cs
-E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\CompiledBindingsHelper.MAUI.cs
 E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\EXAM_MAUI.sourcelink.json
 E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\EXAM_MAUI.dll
 E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\refint\EXAM_MAUI.dll
@@ -452,3 +449,6 @@ C:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10
 C:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fond_agent.jpg.scale-100.old
+E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fond_agent_noir.jpg.scale-100.old
+E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fond_agent_noir.scale-100.jpg

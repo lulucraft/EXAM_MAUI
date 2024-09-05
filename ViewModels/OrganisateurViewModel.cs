@@ -25,8 +25,6 @@ namespace EXAM_MAUI.ViewModels
         [ObservableProperty]
         public int _totalPages = 0;
 
-        //public string PageDisplay => $"{PageNumber}/{TotalCount}";
-
 
         //public OrganisateurViewModel(IDialogService dialogService, INavigationService navigationService, IInviteService inviteService, IEvenementService evenementService) : base(dialogService, navigationService, inviteService, evenementService)
         //{
@@ -35,7 +33,6 @@ namespace EXAM_MAUI.ViewModels
 
         private async Task LoadEvenements()//int? pageNbr
         {
-            //int itemsPerPage = 15;
             //if (pageNbr != null) PageNumber = (int)pageNbr;
             (List<Evenement> evenements, int totalEvenements) = await EvenementService!.GetEvenementsPaginationAsync(PageNumber, ItemsPerPage);
             TotalCount = totalEvenements;

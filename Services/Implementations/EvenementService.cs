@@ -20,7 +20,6 @@ namespace EXAM_MAUI.Services.Implementations
                 .OrderBy(i => i.IdEvenement)
                 .Skip((pageNbr - 1) * pageSize)
                 .Take(pageSize)
-                .AsNoTracking()
                 .ToListAsync();
             return (evenements, totalEvenements);
             //return await context.Evenements.Include(e => e.SousEvenements).ToListAsync();
@@ -51,5 +50,10 @@ namespace EXAM_MAUI.Services.Implementations
         public async Task SaveChangesAsync() => await context.SaveChangesAsync();
 
         public async Task<int> CountAsync() => await context.Evenements.CountAsync();
+
+        //public void AddModifiedEntity(Evenement evenement)
+        //{
+        //    context.Entry(evenement).State = EntityState.Modified;
+        //}
     }
 }

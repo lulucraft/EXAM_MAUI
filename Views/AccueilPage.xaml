@@ -14,32 +14,70 @@
         <StackLayout Padding="20" HorizontalOptions="Center" VerticalOptions="Center">
 
             <Border VerticalOptions="Start" Padding="20" Margin="0,20,0,0" StrokeShape="RoundRectangle 40,0,0,40" BackgroundColor="#40000000">
-                <Label Text="EXAM MAUI" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="20" />
+                <Label Text="Arkône" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="Large" />
             </Border>
 
             <!-- Dashboard -->
-            <Label Text="{Binding TotalEvenements, StringFormat='Total des événements : {0}'}"
-                   FontSize="Large"
-                   HorizontalOptions="Center" />
+            <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Margin="0, 50" Spacing="50">
+                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                    <Frame
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        CornerRadius="50"
+                        BackgroundColor="White"
+                        BorderColor="WHite"
+                        Opacity="0.6"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        HasShadow="True">
+                        <!-- Chiffre à l'intérieur du cercle -->
+                        <Label
+                            Text="{Binding TotalEvenements, StringFormat='{0}'}"
+                            FontSize="Large"
+                            HorizontalOptions="Center"
+                            VerticalTextAlignment="Center" />
+                    </Frame>
+                    <Label Text="Total des événements" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center" />
+                </StackLayout>
 
-            <Label Text="{Binding TotalInvites, StringFormat='Total des invités : {0}'}"
-                   FontSize="Large"
-                   HorizontalOptions="Center" />
+                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                    <Frame
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        CornerRadius="50"
+                        BackgroundColor="White"
+                        BorderColor="WHite"
+                        Opacity="0.6"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        HasShadow="True">
+                        <!-- Chiffre à l'intérieur du cercle -->
+                        <Label
+                            Text="{Binding TotalInvites, StringFormat='{0}'}"
+                            FontSize="Large"
+                            HorizontalOptions="Center"
+                            VerticalTextAlignment="Center"/>
+                    </Frame>
+                    <Label Text="Total des invités" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center" />
+                </StackLayout>
+            </HorizontalStackLayout>
 
-            <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
-                <Button Command="{Binding AgentsCommand}"
-                        Style="{StaticResource PrimaryAction}"
-                        Text="Module Agents"
-                        WidthRequest="250"
-                        HeightRequest="50"
-                        FontSize="17" />
+            <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="23">
+                <Button
+                    Command="{Binding EvenementsCommand}"
+                    Style="{StaticResource PrimaryAction}"
+                    Text="Module Organisateurs"
+                    WidthRequest="340"
+                    HeightRequest="60"
+                    FontSize="24" />
 
-                <Button Command="{Binding EvenementsCommand}"
-                        Style="{StaticResource PrimaryAction}"
-                        Text="Module Organisateurs"
-                        WidthRequest="250"
-                        HeightRequest="50"
-                        FontSize="17" />
+                <Button
+                    Command="{Binding AgentsCommand}"
+                    Style="{StaticResource PrimaryAction}"
+                    Text="Module Agents"
+                    WidthRequest="340"
+                    HeightRequest="60"
+                    FontSize="24" />
             </HorizontalStackLayout>
 
         </StackLayout>

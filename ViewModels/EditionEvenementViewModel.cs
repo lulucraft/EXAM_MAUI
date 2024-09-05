@@ -13,18 +13,27 @@ namespace EXAM_MAUI.ViewModels
         private string? _texteRecherche;
 
         [ObservableProperty]
-        private Evenement _evenement;
+        private Evenement _evenement;// = new()
 
         [ObservableProperty]
         private ObservableCollection<Invite> _invites = [];
 
         public EditionEvenementViewModel(IDialogService dialogService, INavigationService navigationService, IInviteService inviteService, IEvenementService evenementService) : base(dialogService, navigationService, inviteService, evenementService)
         {
-            // Initialiser la propriété Evenement ici
-            Evenement = new Evenement
-            {
-                DateEvenement = DateTime.Now // Initialisation date par défaut
-            };
+            // Si ajout
+            //if (Evenement.IdEvenement == 0)
+            //{
+                // Initialiser la propriété Evenement ici
+                Evenement = new Evenement
+                {
+                    DateEvenement = DateTime.Now // Initialisation date par défaut
+                };
+            //}
+            //else
+            //{
+            //    // On récupère l'événement de la BDD comme l'event passé depuis la pagination est nottracking
+            //    Evenement = EvenementService!.GetEvenement(Evenement.Nom).FirstOrDefault()!;
+            //}
         }
 
         [RelayCommand]
@@ -82,15 +91,21 @@ namespace EXAM_MAUI.ViewModels
                 }
 
                 //var context = new ArkoneLajContext();
-                //await DbContext.Materiau.AddAsync(Materiau);
-                //await context.Evenements.AddAsync(Evenement);
                 await EvenementService!.CreateEvenementAsync(Evenement);
                 //EvenementService!.UpdateEvenement(Evenement);
                 //await context.SaveChangesAsync();
-                await EvenementService!.SaveChangesAsync();
+            }
+            else
+            {
+                // On récupère l'événement de la BDD comme l'event passé depuis la pagination est nottracking
+                //Evenement ev = EvenementService!.GetEvenement(Evenement.Nom).FirstOrDefault()!;
+                //// On récupère l'événement de la BDD comme l'event passé depuis la pagination est nottracking
+                //ev = Evenement;
+                EvenementService!.UpdateEvenement(Evenement);
             }
 
             //await DbContext.SaveChangesAsync();
+            await EvenementService!.SaveChangesAsync();
             await NavigationService.GoBackAsync();
         }
 
@@ -132,17 +147,21 @@ namespace EXAM_MAUI.ViewModels
         {
             if (Evenement.IdInvites.Where(i => i.IdInvite == invite.IdInvite).FirstOrDefault() != null)
             {
-                await DialogService.DisplayAlertAsync("Erreur", "Cet invité est déjà ajouté a l'événement", "Ok mec");
+                await DialogService.DisplayAlertAsync("Erreur", "Cet invité est déjà ajouté à l'événement", "Ok mec");
                 return;
             }
 
             // Associe l'invité à l'événement et sauvegarde l'événement
+            //Evenement.IdInvites.Add(invite);
+            // On récupère l'événement de la BDD comme l'event qui est passé depuis la pagination est nottracking
+            //Evenement = EvenementService!.GetEvenement(Evenement.Nom).FirstOrDefault()!;
             Evenement.IdInvites.Add(invite);
-            //EvenementService!.UpdateEvenement(Evenement);
+            //EvenementService!.AddModifiedEntity(Evenement);
             await EvenementService!.SaveChangesAsync();
-            Invites.Clear();
-            TexteRecherche = string.Empty;
-            //await NavigationService.GoBackAsync();
+            //Invites.Clear();
+            //TexteRecherche = string.Empty;
+            await DialogService.DisplayAlertAsync("Succès", "L'invité a été ajouté à l'événement", "Parfait !!");
+            await NavigationService.GoBackAsync();
         }
     }
 }

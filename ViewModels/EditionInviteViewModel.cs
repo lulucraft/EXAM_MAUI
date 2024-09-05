@@ -1,4 +1,6 @@
 ﻿using EXAM_MAUI.Context.Models;
+using System.Net.Mail;
+using System.Net;
 using System.Text.RegularExpressions;
 
 namespace EXAM_MAUI.ViewModels
@@ -21,7 +23,7 @@ namespace EXAM_MAUI.ViewModels
 
             if (string.IsNullOrEmpty(nom))
             {
-                await DialogService.DisplayAlertAsync("Erreur", "La chaîne est vide", "Ok");
+                await DialogService.DisplayAlertAsync("Erreur", "Le nom est vide", "Ok");
                 return;
             }
 
@@ -29,7 +31,7 @@ namespace EXAM_MAUI.ViewModels
 
             if (string.IsNullOrEmpty(prenom))
             {
-                await DialogService.DisplayAlertAsync("Erreur", "La chaîne est vide", "Ok");
+                await DialogService.DisplayAlertAsync("Erreur", "Le prénom est vide", "Ok");
                 return;
             }
 
@@ -51,13 +53,29 @@ namespace EXAM_MAUI.ViewModels
 
             if (Invite.IdInvite == 0)
             {
+                // Si le CodeInvite généré est identique à un déjà existant
+                Invite? inv = InviteService!.GetInvite(Invite.CodeInvite).FirstOrDefault();
+                if (inv != null)
+                {
+                    // Regénération d'un code aléatoire
+                    GenerateCodeInvite();
+                    // Un événement porte déjà le code entré
+                    await DialogService.DisplayAlertAsync("Erreur", $"Un invité porte déjà le code {Invite.CodeInvite}, je t'en régénère", "Ah cool");
+                    return;
+                }
+
+                // Mode edition
                 await InviteService!.CreateInviteAsync(Invite);
-                //EvenementService!.UpdateEvenement(Evenement);
-                //await context.SaveChangesAsync();
-                await InviteService!.SaveChangesAsync();
+
+                await SendEmailAsync(Invite.EmailInvite, "Votre accès Invité", $"Voici votre code d'invité : {Invite.CodeInvite}");
+            }
+            else
+            {
+                // Mode ajoutgq
+                InviteService!.UpdateInvite(Invite);
             }
 
-            //await DbContext.SaveChangesAsync();
+            await InviteService!.SaveChangesAsync();
             await NavigationService.GoBackAsync();
 
         }
@@ -81,5 +99,41 @@ namespace EXAM_MAUI.ViewModels
             Invite.CodeInvite = new string(stringChars);
         }
 
+
+        private async Task SendEmailAsync(string toEmail, string subject, string body)
+        {
+            try
+            {
+                var fromEmail = "mail.champatux.fr"; // Remplace par ton email
+                var password = "34rV880SuCqXDA26969";    // Remplace par ton mot de passe
+
+                // Configuration client SMTP
+                var smtpClient = new SmtpClient("smtp.gmail.com")
+                {
+                    Port = 465, // Port SMTP
+                    Credentials = new NetworkCredential(fromEmail, password),
+                    EnableSsl = true
+                };
+
+                // Créer le message
+                var mailMessage = new MailMessage
+                {
+                    From = new MailAddress(fromEmail),
+                    Subject = subject,
+                    Body = body,
+                    IsBodyHtml = true, // Si tu veux envoyer du HTML
+                };
+                mailMessage.To.Add(toEmail);
+
+                // Envoyer l'e-mail de façon asynchrone
+                await smtpClient.SendMailAsync(mailMessage);
+
+                Console.WriteLine("E-mail envoyé avec succès !");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Une erreur s'est produite lors de l'envoi de l'e-mail : {ex.Message}");
+            }
+        }
     }
 }

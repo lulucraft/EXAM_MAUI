@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:local="clr-namespace:EXAM_MAUI"
     xmlns:vw="clr-namespace:EXAM_MAUI.Views"
-    Title="EXAM_MAUI"
+    Title="Arkône"
     mc:Ignorable="d">
     <!--
         The overall app visual hierarchy is defined here, along with navigation.
@@ -113,10 +113,14 @@
     -->
     <Shell.FlyoutFooterTemplate>
         <DataTemplate>
-            <HorizontalStackLayout HorizontalOptions="Start" VerticalOptions="Center" Margin="50, 10">
+            <HorizontalStackLayout VerticalOptions="Center" Margin="50, 10" Spacing="20">
+                <Label Text="Mode sombre" VerticalOptions="Center" VerticalTextAlignment="Center" HorizontalOptions="Center" />
+                <!-- Margin="50, 10"-->
                 <Switch
                     x:Name="themeSwitch"
-                    VerticalOptions="Center" ThumbColor="White"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    ThumbColor="White"
                     OnColor="{StaticResource Primary}"
                     Toggled="ChangeTheme"
                     IsToggled="True" />

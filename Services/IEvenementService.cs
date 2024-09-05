@@ -22,5 +22,7 @@ namespace EXAM_MAUI.Services
         Task SaveChangesAsync();
 
         Task<int> CountAsync();
+
+        //void AddModifiedEntity(Evenement evenement);
     }
 }

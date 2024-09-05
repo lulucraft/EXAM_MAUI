@@ -137,7 +137,7 @@
             <summary>The backing field for <see cref="P:EXAM_MAUI.ViewModels.EditionEvenementViewModel.AssocierInviteCommand"/>.</summary>
         </member>
         <member name="P:EXAM_MAUI.ViewModels.EditionEvenementViewModel.AssocierInviteCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:EXAM_MAUI.ViewModels.EditionEvenementViewModel.AssocierInvite(EXAM_MAUI.Context.Models.Invite)"/>.</summary>
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:EXAM_MAUI.ViewModels.EditionEvenementViewModel.AssocierInvite(EXAM_MAUI.Context.Models.Invite)"/>.</summary>
         </member>
         <member name="T:EXAM_MAUI.ViewModels.EditionInviteViewModel">
             <inheritdoc/>

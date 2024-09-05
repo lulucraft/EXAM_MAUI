@@ -24,13 +24,13 @@
 
                 <Grid Grid.Row="0" Padding="40" Margin="0,40,0,0" MaximumWidthRequest="1000">
                     <Border VerticalOptions="Start" StrokeShape="RoundRectangle 40,0,0,40" BackgroundColor="#40000000">
-                        <Label Text="Module Agent" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="32" />
+                        <Label Text="Module Agent" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="Large" />
                     </Border>
                 </Grid>
 
                 <HorizontalStackLayout HorizontalOptions="Center" WidthRequest="300">
                     <Label Text="Saisir le code de l'invité :"
-                        FontSize="25"
+                        FontSize="Medium"
                         HorizontalOptions="Center"
                         TextColor="White"
                         MaximumWidthRequest="500" />
@@ -41,7 +41,7 @@
                         PlaceholderColor="White"
                         Keyboard="Text"
                         MaxLength="6"
-                        FontSize="25"
+                        FontSize="Medium"
                         MaximumWidthRequest="500"
                         Text="{Binding InputCode, Mode=TwoWay}"
                         TextColor="White" />
@@ -51,7 +51,7 @@
                         Command="{Binding ValiderCommand}"
                         CommandParameter="{Binding InputCode}"
                         Style="{StaticResource PrimaryAction}"
-                        FontSize="20"
+                        FontSize="Medium"
                         MaximumWidthRequest="400"
                         HeightRequest="60"
                         Padding="20"

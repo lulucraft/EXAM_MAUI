@@ -1,6 +1,8 @@
 ﻿obj\Debug\net8.0-android\resizetizer\r\drawable\fond.jpg
 obj\Debug\net8.0-android\resizetizer\r\drawable\fond_agent.jpg
+obj\Debug\net8.0-android\resizetizer\r\drawable\fond_agent.jpg.old
 obj\Debug\net8.0-android\resizetizer\r\drawable\fond_agent_noir.jpg
+obj\Debug\net8.0-android\resizetizer\r\drawable\fond_agent_noir.jpg.old
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\dotnet_bot.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\dotnet_bot.png

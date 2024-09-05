@@ -5,7 +5,7 @@
         public EditionInvitePage(EditionInviteViewModel viewModel)
         {
             InitializeComponent();
-            viewModel.Title = "Edition Invités";
+            viewModel.Title = "Edition Invité";
             BindingContext = viewModel;
             SetBinding(TitleProperty, new Binding(nameof(EditionInviteViewModel.Title)));
         }
