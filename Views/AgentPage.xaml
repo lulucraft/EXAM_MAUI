@@ -23,7 +23,7 @@
             <StackLayout Grid.Row="1" Padding="25" VerticalOptions="Center">
 
                 <Grid Grid.Row="0" Padding="40" Margin="0,40,0,0" MaximumWidthRequest="1000">
-                    <Border VerticalOptions="Start" StrokeShape="RoundRectangle 40,0,0,40" BackgroundColor="#40000000">
+                    <Border VerticalOptions="Start" StrokeShape="RoundRectangle 40,0,0,40" BackgroundColor="#40000000" Padding="10">
                         <Label Text="Module Agent" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="Large" />
                     </Border>
                 </Grid>

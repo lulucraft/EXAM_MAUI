@@ -31,6 +31,10 @@
                 </Grid.ColumnDefinitions>
 
                 <StackLayout Grid.Column="0" Padding="10,0,0,0" VerticalOptions="Center">
+                    <HorizontalStackLayout Grid.Row="0" Margin="0,10" HorizontalOptions="Center">
+                        <Label Text="Détails de l'événement :" FontSize="Small" />
+                    </HorizontalStackLayout>
+
                     <HorizontalStackLayout HorizontalOptions="Center">
                         <Label Text="Nom :" VerticalOptions="Center" WidthRequest="150" />
                         <Entry Text="{Binding Evenement.Nom}" WidthRequest="180" />
@@ -61,7 +65,7 @@
                     <HorizontalStackLayout HorizontalOptions="Center">
                         <Entry
                             Text="{Binding TexteRecherche}"
-                            Placeholder="Saisissez le nom d'un invité"
+                            Placeholder="Saisissez un code invité"
                             WidthRequest="200"
                             HeightRequest="40" />
                         <Button

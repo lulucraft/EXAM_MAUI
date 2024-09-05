@@ -14,11 +14,11 @@
         <StackLayout Padding="20" HorizontalOptions="Center" VerticalOptions="Center">
 
             <Border VerticalOptions="Start" Padding="20" Margin="0,20,0,0" StrokeShape="RoundRectangle 40,0,0,40" BackgroundColor="#40000000">
-                <Label Text="Arkône" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="Large" />
+                <Label Text="Arkône événements" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="Large" />
             </Border>
 
             <!-- Dashboard -->
-            <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Margin="0, 50" Spacing="50">
+            <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Margin="0, 50" Spacing="100">
                 <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
                     <Frame
                         WidthRequest="100"

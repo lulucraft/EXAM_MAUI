@@ -70,6 +70,20 @@
 
             <!-- Pagination -->
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10" Margin="10">
+                <!-- Bouton première page -->
+                <Button
+                    Text="&lt;&lt;"
+                    Command="{Binding FirstPageCommand}">
+                    <Button.Triggers>
+                        <DataTrigger TargetType="Button" Binding="{Binding PageNumber}" Value="1">
+                            <Setter Property="IsEnabled" Value="False" />
+                        </DataTrigger>
+                        <DataTrigger TargetType="Button" Binding="{Binding PageNumber}" Value="2">
+                            <Setter Property="IsEnabled" Value="True" />
+                        </DataTrigger>
+                    </Button.Triggers>
+                </Button>
+
                 <!-- Bouton page précédente -->
                 <Button Text="&lt;"
                     Command="{Binding PreviousPageCommand}">
@@ -82,6 +96,7 @@
                         </DataTrigger>
                     </Button.Triggers>
                 </Button>
+
                 <!-- Numéros pages-->
                 <Label VerticalOptions="Center">
                     <Label.Text>
@@ -91,6 +106,7 @@
                         </MultiBinding>
                     </Label.Text>
                 </Label>
+
                 <!-- Bouton page suivante -->
                 <Button
                     Text="&gt;"
@@ -106,6 +122,18 @@
                             <Setter Property="IsEnabled" Value="False" />
                         </DataTrigger>
                     </Button.Triggers>-->
+                </Button>
+
+                <!-- Bouton dernière page -->
+                <Button
+                    Text="&gt;&gt;"
+                    Command="{Binding LastPageCommand}">
+                    <Button.IsEnabled>
+                        <MultiBinding Converter="{StaticResource IsNotLastPageConverter}">
+                            <Binding Path="PageNumber" />
+                            <Binding Path="TotalPages" />
+                        </MultiBinding>
+                    </Button.IsEnabled>
                 </Button>
             </StackLayout>
 

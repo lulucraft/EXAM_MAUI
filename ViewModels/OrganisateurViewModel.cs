@@ -75,5 +75,19 @@ namespace EXAM_MAUI.ViewModels
 
         [RelayCommand]
         private async Task AfficherStatsAsync(Evenement evenement) => await NavigationService.GoToAsync(nameof(FicheStatPage), evenement);
+
+        [RelayCommand]
+        private async Task FirstPage()
+        {
+            PageNumber = 1;
+            await LoadEvenements();
+        }
+
+        [RelayCommand]
+        private async Task LastPage()
+        {
+            PageNumber = TotalPages;
+            await LoadEvenements();
+        }
     }
 }

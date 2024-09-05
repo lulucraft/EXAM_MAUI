@@ -66,8 +66,6 @@ namespace EXAM_MAUI.ViewModels
 
                 // Mode edition
                 await InviteService!.CreateInviteAsync(Invite);
-
-                await SendEmailAsync(Invite.EmailInvite, "Votre accès Invité", $"Voici votre code d'invité : {Invite.CodeInvite}");
             }
             else
             {
@@ -76,6 +74,10 @@ namespace EXAM_MAUI.ViewModels
             }
 
             await InviteService!.SaveChangesAsync();
+
+            // Envoi mail avec CodeInvite
+            _ = SendEmailAsync(Invite.EmailInvite, "Votre accès Invité", $"Voici votre code d'invité : {Invite.CodeInvite}");
+            
             await NavigationService.GoBackAsync();
 
         }
@@ -104,19 +106,19 @@ namespace EXAM_MAUI.ViewModels
         {
             try
             {
-                var fromEmail = "mail.champatux.fr"; // Remplace par ton email
-                var password = "34rV880SuCqXDA26969";    // Remplace par ton mot de passe
+                string fromEmail = "jeanmi@akrone.fr";
+                string password = "34rV880SuCqXDA26969";
 
                 // Configuration client SMTP
-                var smtpClient = new SmtpClient("smtp.gmail.com")
+                SmtpClient smtpClient = new SmtpClient("mail.champatux.fr")
                 {
                     Port = 465, // Port SMTP
                     Credentials = new NetworkCredential(fromEmail, password),
                     EnableSsl = true
                 };
 
-                // Créer le message
-                var mailMessage = new MailMessage
+                // Crée le message
+                MailMessage mailMessage = new MailMessage
                 {
                     From = new MailAddress(fromEmail),
                     Subject = subject,

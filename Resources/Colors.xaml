@@ -52,7 +52,7 @@
     <Color x:Key="BackgroundDark">#121212</Color>
     <Color x:Key="BackgroundLight">White</Color>
     <Color x:Key="TextDark">White</Color>
-    <Color x:Key="TextLight">Black</Color>
+    <Color x:Key="TextLight">#C30000</Color>
 
     <Color x:Key="Yellow100Accent">#F7B548</Color>
     <Color x:Key="Yellow200Accent">#FFD590</Color>

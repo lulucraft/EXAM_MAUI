@@ -20,8 +20,12 @@
 
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Padding="10">
+            <HorizontalStackLayout Grid.Row="0" Margin="0,10" HorizontalOptions="Center">
+                <Label Text="Statistiques de présence pour l'événement :" FontSize="Medium" />
+            </HorizontalStackLayout>
+
             <!-- Définition des lignes -->
-            <Grid RowDefinitions="*,Auto,Auto" MaximumWidthRequest="800" MinimumHeightRequest="50">
+            <Grid RowDefinitions="*,Auto,Auto" MaximumWidthRequest="800" MinimumHeightRequest="200">
 
                 <!-- CollectionView -->
                 <CollectionView Grid.Row="0" ItemsSource="{Binding Evenement.IdInvites}">

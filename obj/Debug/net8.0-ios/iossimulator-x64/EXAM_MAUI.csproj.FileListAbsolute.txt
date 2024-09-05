@@ -717,4 +717,3 @@ C:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-ios\iossimulator-x64\EXAM
 C:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-ios\iossimulator-x64\ref\EXAM_MAUI.dll
 E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\fond_agent_noir.jpg.old
 E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\fond_agent.jpg.old
-E:\Users\lucas\source\repos\EXAM_MAUI\obj\Debug\net8.0-ios\iossimulator-x64\build-signature\signature
