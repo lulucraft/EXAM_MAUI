@@ -5,9 +5,10 @@
         public EditionEvenementPage(EditionEvenementViewModel viewModel)
         {
             InitializeComponent();
-            viewModel.Title = "Edition évenement";
-            BindingContext = viewModel;
-            SetBinding(Page.TitleProperty, new Binding(nameof(EditionEvenementViewModel.Title)));
+            EditionEvenementViewModel model = new(viewModel.DialogService, viewModel.NavigationService, viewModel.InviteService!, viewModel.EvenementService!);
+            model.Title = "Edition Evénement";
+            BindingContext = model;
+            SetBinding(TitleProperty, new Binding(nameof(EditionEvenementViewModel.Title)));
         }
     }
 }

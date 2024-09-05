@@ -4,33 +4,50 @@ using System.Text.RegularExpressions;
 
 namespace EXAM_MAUI.ViewModels
 {
-    [QueryProperty(nameof(Evenement), "data")]
-    public partial class EditionEvenementViewModel(IDialogService dialogService, INavigationService navigationService, IInviteService inviteService, IEvenementService evenementService) : BaseViewModel(dialogService, navigationService, inviteService, evenementService)
+    [QueryProperty(nameof(Context.Models.Evenement), "data")]
+    public partial class EditionEvenementViewModel : BaseViewModel
     {
-        private static readonly Regex regex = new Regex(@"-?\d{1,3}\.\d+,\s*-?\d{1,3}\.\d+", RegexOptions.Compiled);
+        private static readonly Regex regex = new(@"-?\d{1,3}\.\d+,\s*-?\d{1,3}\.\d+", RegexOptions.Compiled);
 
         [ObservableProperty]
         private string? _texteRecherche;
 
         [ObservableProperty]
-        private Evenement _evenement = new();
+        private Evenement _evenement;
 
         [ObservableProperty]
         private ObservableCollection<Invite> _invites = [];
 
+        public EditionEvenementViewModel(IDialogService dialogService, INavigationService navigationService, IInviteService inviteService, IEvenementService evenementService) : base(dialogService, navigationService, inviteService, evenementService)
+        {
+            // Initialiser la propriété Evenement ici
+            Evenement = new Evenement
+            {
+                DateEvenement = DateTime.Now // Initialisation date par défaut
+            };
+        }
+
         [RelayCommand]
         private async Task EnregistrerAsync()
         {
-            string nom = Evenement.Nom;
+            string? nom = Evenement.Nom;
 
             if (string.IsNullOrEmpty(nom))
             {
-                await DialogService.DisplayAlertAsync("Erreur", "La chaîne est vide", "Ok");
+                await DialogService.DisplayAlertAsync("Erreur", "Le nom est vide", "Ok");
                 return;
-
             }
 
-            string coordonneesGPS = Evenement.CoordonneesGps;
+            string? lieu = Evenement.LieuEvenement;
+
+            if (string.IsNullOrEmpty(lieu))
+            {
+                await DialogService.DisplayAlertAsync("Erreur", "Le lieu est vide", "Ok");
+                return;
+            }
+
+            // 50.0,25.0,12.0
+            string? coordonneesGPS = Evenement.CoordonneesGps;
 
             if (string.IsNullOrEmpty(coordonneesGPS) || !regex.IsMatch(coordonneesGPS))
             {
@@ -40,11 +57,10 @@ namespace EXAM_MAUI.ViewModels
 
             DateTime? date = Evenement.DateEvenement;
 
-            if (date == null || date < DateTime.Now.Date)
+            if (!date.HasValue || date.Value < DateTime.Today)
             {
                 await DialogService.DisplayAlertAsync("Erreur", "La date de l'événement ne peut pas être antérieure à la date d'aujourd'hui.", "Ok");
                 return;
-
             }
 
             int? nbInvites = Evenement.NbInvites;
@@ -57,7 +73,8 @@ namespace EXAM_MAUI.ViewModels
 
             if (Evenement.IdEvenement == 0)
             {
-                if (EvenementService!.GetEvenement(Evenement.Nom) != null)
+                Evenement? even = EvenementService!.GetEvenement(Evenement.Nom).FirstOrDefault();
+                if (even != null)
                 {
                     // Un événement porte déjà le nom entré
                     await DialogService.DisplayAlertAsync("Erreur", $"Un événement porte déjà le nom {Evenement.Nom}", "Ah merde");
@@ -92,7 +109,7 @@ namespace EXAM_MAUI.ViewModels
                 await DialogService.DisplayAlertAsync("Erreur", "Veuillez entrer le code de l'invité", "Ok BG");
                 return;
             }
-
+            //Enlève les espaces
             string input = TexteRecherche.Replace(" ", "");
 
             //IEnumerable<Invite> enumInvite = InviteService!.SearchInvite(input);
@@ -105,6 +122,27 @@ namespace EXAM_MAUI.ViewModels
 
             // Invité(s) trouvé(s)
             Invites = [.. invites];
+        }
+
+        [RelayCommand]
+        private async Task AjouterInviteAsync() => await NavigationService.GoToAsync(nameof(EditionInvitePage));
+
+        [RelayCommand]
+        private async Task AssocierInvite(Invite invite)
+        {
+            if (Evenement.IdInvites.Where(i => i.IdInvite == invite.IdInvite).FirstOrDefault() != null)
+            {
+                await DialogService.DisplayAlertAsync("Erreur", "Cet invité est déjà ajouté a l'événement", "Ok mec");
+                return;
+            }
+
+            // Associe l'invité à l'événement et sauvegarde l'événement
+            Evenement.IdInvites.Add(invite);
+            //EvenementService!.UpdateEvenement(Evenement);
+            await EvenementService!.SaveChangesAsync();
+            Invites.Clear();
+            TexteRecherche = string.Empty;
+            //await NavigationService.GoBackAsync();
         }
     }
 }

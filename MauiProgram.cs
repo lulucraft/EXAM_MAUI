@@ -29,14 +29,18 @@ namespace EXAM_MAUI
 
             builder.Services.AddSingleton<IInviteService, InviteService>();
             builder.Services.AddSingleton<IEvenementService, EvenementService>();
-            builder.Services.AddTransient<AccueilViewModel>();
-            builder.Services.AddTransient<AccueilPage>();
-            builder.Services.AddSingleton<AgentViewModel>();
-            builder.Services.AddSingleton<AgentPage>();
+            builder.Services.AddSingleton<AccueilViewModel>();
+            builder.Services.AddSingleton<AccueilPage>();
+            builder.Services.AddTransient<AgentViewModel>();
+            builder.Services.AddTransient<AgentPage>();
             builder.Services.AddSingleton<OrganisateurViewModel>();
             builder.Services.AddSingleton<OrganisateurPage>();
-            builder.Services.AddSingleton<EditionEvenementViewModel>();
-            builder.Services.AddSingleton<EditionEvenementPage>();
+            builder.Services.AddTransient<EditionEvenementViewModel>();
+            builder.Services.AddTransient<EditionEvenementPage>();
+            builder.Services.AddTransient<EditionInviteViewModel>();
+            builder.Services.AddTransient<EditionInvitePage>();
+            builder.Services.AddTransient<FicheStatViewModel>();
+            builder.Services.AddTransient<FicheStatPage>();
 
             // Ajouter la configuration des secrets utilisateur
             var configuration = new ConfigurationBuilder()

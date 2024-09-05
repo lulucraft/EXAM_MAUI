@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="EXAM_MAUI.Views.FicheStatPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:EXAM_MAUI.ViewModels"
+    xmlns:conv="clr-namespace:EXAM_MAUI.Converters"
+    xmlns:m="clr-namespace:EXAM_MAUI.Context.Models;assembly=EXAM_MAUI.Context"
+    xmlns:local="clr-namespace:EXAM_MAUI.Views"
+    x:DataType="vm:FicheStatViewModel"
+    mc:Ignorable="d">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <conv:BooleanToYesNoConverter x:Key="BoolToYesNo"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Padding="10">
+            <!-- Définition des lignes -->
+            <Grid RowDefinitions="*,Auto,Auto" MaximumWidthRequest="800">
+
+                <!-- CollectionView -->
+                <CollectionView Grid.Row="0" ItemsSource="{Binding Evenement.IdInvites}">
+                    <CollectionView.Header>
+                        <Grid ColumnDefinitions="2*,*,*" HeightRequest="28" VerticalOptions="Center">
+                            <Label Grid.Column="0" Text="Code invité" FontAttributes="Bold" TextColor="{StaticResource Yellow200Accent}" />
+                            <Label Grid.Column="1" Text="Présent(e)" FontAttributes="Bold" TextColor="{StaticResource Yellow200Accent}" />
+                            <BoxView Grid.ColumnSpan="4" HeightRequest="1" VerticalOptions="End" Color="{StaticResource Yellow100Accent}" />
+                        </Grid>
+                    </CollectionView.Header>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="m:Invite">
+                            <Grid ColumnDefinitions="2*,*,*" HeightRequest="28">
+                                <Label Grid.Column="0" Text="{Binding CodeInvite}" VerticalOptions="Center" />
+                                <Label Grid.Column="1" Text="{Binding PresenceInvite, Converter={StaticResource BoolToYesNo}}" VerticalOptions="Center" />
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+            </Grid>
+
+            <HorizontalStackLayout
+                HorizontalOptions="Center">
+                <!-- Bouton Retour -->
+                <Button
+                    Text="Retour"
+                    Command="{Binding RetourCommand}"
+                    HorizontalOptions="Center"
+                    BackgroundColor="{StaticResource Primary}"
+                    Margin="20" />
+            </HorizontalStackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="EXAM_MAUI.Views.EditionInvitePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:EXAM_MAUI.ViewModels"
+    xmlns:local="clr-namespace:EXAM_MAUI.Views"
+    xmlns:helpers="clr-namespace:EXAM_MAUI.Helpers"
+    x:DataType="vm:EditionInviteViewModel"
+    mc:Ignorable="d">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Label Text="Nom :" VerticalOptions="Center" WidthRequest="150" />
+                <Entry Text="{Binding Invite.NomInvite}" WidthRequest="180" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Label Text="Prénom :" VerticalOptions="Center" WidthRequest="150" />
+                <Entry Text="{Binding Invite.PrenomInvite}" WidthRequest="180" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Label Text="Adresse mail :" VerticalOptions="Center" WidthRequest="150" />
+                <Entry Text="{Binding Invite.EmailInvite}" WidthRequest="180" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Label Text="Téléphone :" VerticalOptions="Center" WidthRequest="150" />
+                <Entry Text="{Binding Invite.TelephoneInvite}" WidthRequest="180" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Label Text="Code invité :" VerticalOptions="Center" WidthRequest="150" />
+                <Entry Text="{Binding Invite.CodeInvite}" WidthRequest="180" IsReadOnly="True"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Margin="0, 30, 0, 0">
+                <Button Text="Enregistrer" Command="{Binding EnregistrerCommand}"
+                        Style="{StaticResource PrimaryAction}">
+                    <Button.ImageSource>
+                        <FontImageSource FontFamily="MaterialDesignIcons" Glyph="{x:Static helpers:MaterialDesignIcons.ContentSave}" Size="26" />
+                    </Button.ImageSource>
+                </Button>
+                <Button Text="Annuler" Command="{Binding AnnulerCommand}"
+                        Style="{StaticResource Action}">
+                    <Button.ImageSource>
+                        <FontImageSource FontFamily="MaterialDesignIcons" Glyph="{x:Static helpers:MaterialDesignIcons.Cancel}" Size="26" />
+                    </Button.ImageSource>
+                </Button>
+            </HorizontalStackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

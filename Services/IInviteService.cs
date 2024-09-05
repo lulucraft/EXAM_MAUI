@@ -11,6 +11,14 @@ namespace EXAM_MAUI.Services
 
         EntityEntry<Invite> UpdateInvite(Invite invite);
 
-        void SaveChanges();
+        Task<EntityEntry<Invite>> CreateInviteAsync(Invite invite);
+
+        EntityEntry<Invite> Add(Invite invite);
+
+        //void SaveChanges();
+
+        Task SaveChangesAsync();
+
+        Task<int> CountAsync();
     }
 }

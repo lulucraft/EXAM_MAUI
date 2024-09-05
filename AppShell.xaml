@@ -26,17 +26,6 @@
         Uncomment the below section to enable Shell Flyout item(s)
         And ensure appropriate page definitions are available for it work as expected
     -->
-    <FlyoutItem Title="Paramètres">
-        <ShellContent>
-            <ContentPage Title="Settings">
-                <StackLayout Padding="10">
-                    <Label Text="Dark Mode" VerticalOptions="Center" />
-                    <Switch IsToggled="{Binding IsDarkMode, Mode=TwoWay}" VerticalOptions="Center" />
-                </StackLayout>
-            </ContentPage>
-        </ShellContent>
-    </FlyoutItem>
-
     <FlyoutItem Title="Accueil">
         <ShellContent
             ContentTemplate="{DataTemplate vw:AccueilPage}"
@@ -52,6 +41,8 @@
             ContentTemplate="{DataTemplate vw:OrganisateurPage}"
             Route="OrganisateurPage" />
     </FlyoutItem>
+
+
     <!--
         When the Flyout is visible this will be a menu item you can tie a click behavior to
     -->
@@ -120,4 +111,22 @@
         </DataTemplate>
     </Shell.FlyoutFooterTemplate>
     -->
+    <Shell.FlyoutFooterTemplate>
+        <DataTemplate>
+            <HorizontalStackLayout HorizontalOptions="Start" VerticalOptions="Center" Margin="50, 10">
+                <Switch
+                    x:Name="themeSwitch"
+                    VerticalOptions="Center" ThumbColor="White"
+                    OnColor="{StaticResource Primary}"
+                    Toggled="ChangeTheme"
+                    IsToggled="True" />
+                <!-- Margin="0,0,-110,0"
+                <Label Text="Thème Dark" VerticalOptions="Center">
+                    <Label.Triggers>
+                        <DataTrigger TargetType="Label" Binding="{Binding Source={x:Reference themeSwitch}, Path=IsToggled}" Value="true" />
+                    </Label.Triggers>
+                </Label>-->
+            </HorizontalStackLayout>
+        </DataTemplate>
+    </Shell.FlyoutFooterTemplate>
 </Shell>

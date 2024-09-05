@@ -7,7 +7,7 @@
             InitializeComponent();
             viewModel.Title = "Accueil";
             BindingContext = viewModel;
-            SetBinding(Page.TitleProperty, new Binding(nameof(AccueilViewModel.Title)));
+            SetBinding(TitleProperty, new Binding(nameof(AccueilViewModel.Title)));
         }
     }
 }

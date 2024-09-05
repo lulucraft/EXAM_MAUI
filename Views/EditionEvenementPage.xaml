@@ -6,52 +6,128 @@
     xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:vm="clr-namespace:EXAM_MAUI.ViewModels"
+    xmlns:conv="clr-namespace:EXAM_MAUI.Converters"
+    xmlns:m="clr-namespace:EXAM_MAUI.Context.Models;assembly=EXAM_MAUI.Context"
     xmlns:local="clr-namespace:EXAM_MAUI.Views"
     xmlns:helpers="clr-namespace:EXAM_MAUI.Helpers"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
     x:DataType="vm:EditionEvenementViewModel"
     mc:Ignorable="d">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <conv:BooleanToYesNoConverter x:Key="BoolToYesNo"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <HorizontalStackLayout HorizontalOptions="Center">
-                <Entry Placeholder="Saisissez le nom d'un invité" WidthRequest="200" Text="{Binding TexteRecherche}" />
-                <Button Text="Rechercher" Command="{Binding RechercheCommand}"
-                        HorizontalOptions="Center" BackgroundColor="{StaticResource Primary}">
-                    <Button.ImageSource>
-                        <FontImageSource FontFamily="MaterialDesignIcons" Glyph="{x:Static helpers:MaterialDesignIcons.Magnify}" Size="26" />
-                    </Button.ImageSource>
-                </Button>
-            </HorizontalStackLayout>
 
-            <HorizontalStackLayout HorizontalOptions="Center">
-                <Label Text="Nom :" VerticalOptions="Center" WidthRequest="150" />
-                <Entry Text="{Binding Evenement.Nom}" WidthRequest="180" />
-            </HorizontalStackLayout>
-            <HorizontalStackLayout HorizontalOptions="Center">
-                <Label Text="Lieu :" VerticalOptions="Center" WidthRequest="150" />
-                <Entry Text="{Binding Evenement.LieuEvenement}" WidthRequest="180" />
-            </HorizontalStackLayout>
-            <HorizontalStackLayout HorizontalOptions="Center">
-                <Label Text="Coordonnées GPS :" VerticalOptions="Center" WidthRequest="150" />
-                <Entry Text="{Binding Evenement.CoordonneesGps}" WidthRequest="180" />
-            </HorizontalStackLayout>
-            <HorizontalStackLayout HorizontalOptions="Center">
-                <Label Text="Date évenément :" VerticalOptions="Center" WidthRequest="150" />
-                <DatePicker Date="{Binding Evenement.DateEvenement}" WidthRequest="180" />
-            </HorizontalStackLayout>
-            <HorizontalStackLayout HorizontalOptions="Center">
-                <Label Text="Nombre invité :" VerticalOptions="Center" WidthRequest="150" />
-                <Entry Text="{Binding Evenement.NbInvites}" WidthRequest="180" />
-            </HorizontalStackLayout>
+            <Grid>
+                <!-- Défini les colonnes -->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Column="0" Padding="10,0,0,0" VerticalOptions="Center">
+                    <HorizontalStackLayout HorizontalOptions="Center">
+                        <Label Text="Nom :" VerticalOptions="Center" WidthRequest="150" />
+                        <Entry Text="{Binding Evenement.Nom}" WidthRequest="180" />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout HorizontalOptions="Center">
+                        <Label Text="Lieu :" VerticalOptions="Center" WidthRequest="150" />
+                        <Entry Text="{Binding Evenement.LieuEvenement}" WidthRequest="180" />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout HorizontalOptions="Center">
+                        <Label Text="Coordonnées GPS :" VerticalOptions="Center" WidthRequest="150" />
+                        <Entry Text="{Binding Evenement.CoordonneesGps}" WidthRequest="180" />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout HorizontalOptions="Center">
+                        <Label Text="Date évenément :" VerticalOptions="Center" WidthRequest="150" />
+                        <DatePicker MinimumDate="{x:Static sys:DateTime.Today}" Date="{Binding Evenement.DateEvenement, Mode=TwoWay}" WidthRequest="180" />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout HorizontalOptions="Center">
+                        <Label Text="Nombre invités :" VerticalOptions="Center" WidthRequest="150" />
+                        <Entry Text="{Binding Evenement.NbInvites}" WidthRequest="180" />
+                    </HorizontalStackLayout>
+                </StackLayout>
+
+                <!-- Séparation verticale -->
+                <BoxView Grid.Column="1" WidthRequest="1" Color="White" VerticalOptions="FillAndExpand" Margin="50, 0" />
+
+                <!-- Partie de droite -->
+                <StackLayout Grid.Column="2" Padding="10,0,0,0" VerticalOptions="Center">
+                    <HorizontalStackLayout HorizontalOptions="Center">
+                        <Entry Placeholder="Saisissez le nom d'un invité" WidthRequest="200" Text="{Binding TexteRecherche}" />
+                        <Button
+                            Text="Rechercher"
+                            Command="{Binding RechercheCommand}"
+                            HorizontalOptions="Center" BackgroundColor="{StaticResource Primary}">
+                            <Button.ImageSource>
+                                <FontImageSource FontFamily="MaterialDesignIcons" Glyph="{x:Static helpers:MaterialDesignIcons.Magnify}" Size="26" />
+                            </Button.ImageSource>
+                        </Button>
+                    </HorizontalStackLayout>
+
+                    <Grid RowDefinitions="*,Auto" Margin="0, 30">
+                        <Grid Grid.Row="0" ColumnDefinitions="2*,2*,*,*" HeightRequest="25" VerticalOptions="CenterAndExpand">
+                            <Label Grid.Column="0" Text="Code invité" FontAttributes="Bold" TextColor="{StaticResource Yellow200Accent}" />
+                            <Label Grid.Column="1" Text="Présent(e)" FontAttributes="Bold" TextColor="{StaticResource Yellow200Accent}" />
+                        </Grid>
+                        <BoxView Grid.ColumnSpan="3" HeightRequest="1" VerticalOptions="End" Color="{StaticResource Yellow100Accent}" />
+
+                        <ScrollView Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="200">
+                            <CollectionView Grid.Row="0" ItemsSource="{Binding Invites}">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate x:DataType="m:Invite">
+                                        <Grid ColumnDefinitions="2*,2*,*" HeightRequest="32">
+                                            <Label Grid.Column="0" Text="{Binding CodeInvite}" VerticalOptions="Center" />
+                                            <Label Grid.Column="1" Text="{Binding PresenceInvite, Converter={StaticResource BoolToYesNo}}" VerticalOptions="Center" />
+                                            <Button Grid.Column="2" Text="Associer" Padding="7, 3" Margin="3"
+                                                    Command="{Binding AssocierInviteCommand, Source={RelativeSource AncestorType={x:Type vm:EditionEvenementViewModel}}}"
+                                                    CommandParameter="{Binding .}"
+                                                    VerticalOptions="Center"
+                                                    HorizontalOptions="Center" FontSize="14" FontAttributes="Bold">
+                                                <Button.ImageSource>
+                                                    <FontImageSource FontFamily="MaterialDesignIcons" Glyph="{x:Static helpers:MaterialDesignIcons.Plus}" Size="18" />
+                                                </Button.ImageSource>
+                                            </Button>
+                                        </Grid>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+                        </ScrollView>
+                    </Grid>
+
+                    <HorizontalStackLayout HorizontalOptions="Center">
+                        <Button
+                            Text="Ajouter un nouvel invité"
+                            Command="{Binding AjouterInviteCommand}"
+                            HorizontalOptions="Center"
+                            Style="{StaticResource PrimaryAction}"
+                            HeightRequest="38">
+                            <Button.ImageSource>
+                                <FontImageSource FontFamily="MaterialDesignIcons" Glyph="{x:Static helpers:MaterialDesignIcons.Creation}" Size="17" />
+                            </Button.ImageSource>
+                        </Button>
+                    </HorizontalStackLayout>
+                </StackLayout>
+            </Grid>
 
             <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Margin="0, 30, 0, 0">
-                <Button Text="Enregistrer" Command="{Binding EnregistrerCommand}"
-                        Style="{StaticResource PrimaryAction}">
+                <Button
+                    Text="Enregistrer"
+                    Command="{Binding EnregistrerCommand}"
+                    Style="{StaticResource PrimaryAction}">
                     <Button.ImageSource>
                         <FontImageSource FontFamily="MaterialDesignIcons" Glyph="{x:Static helpers:MaterialDesignIcons.ContentSave}" Size="26" />
                     </Button.ImageSource>
                 </Button>
-                <Button Text="Annuler" Command="{Binding AnnulerCommand}"
-                        Style="{StaticResource Action}">
+                <Button
+                    Text="Annuler"
+                    Command="{Binding AnnulerCommand}"
+                    Style="{StaticResource Action}">
                     <Button.ImageSource>
                         <FontImageSource FontFamily="MaterialDesignIcons" Glyph="{x:Static helpers:MaterialDesignIcons.Cancel}" Size="26" />
                     </Button.ImageSource>

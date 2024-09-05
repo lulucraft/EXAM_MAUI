@@ -7,7 +7,7 @@
             InitializeComponent();
             viewModel.Title = "Agents";
             BindingContext = viewModel;
-            SetBinding(Page.TitleProperty, new Binding(nameof(AgentViewModel.Title)));
+            SetBinding(TitleProperty, new Binding(nameof(AgentViewModel.Title)));
         }
     }
 }

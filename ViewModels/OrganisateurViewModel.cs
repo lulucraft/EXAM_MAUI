@@ -14,31 +14,38 @@ namespace EXAM_MAUI.ViewModels
         private int _totalCount;
 
         [ObservableProperty]
-        private int _totalPages;
+        private int _pageNumber = 1;
 
         [ObservableProperty]
-        private int _pageNumber = 1;
+        private int _itemsPerPage = 15;
 
         //[ObservableProperty]
         //private string pageDisplay;
 
-        public string PageDisplay => $"{PageNumber}/{TotalCount}";
+        [ObservableProperty]
+        public int _totalPages = 0;
+
+        //public string PageDisplay => $"{PageNumber}/{TotalCount}";
+
 
         //public OrganisateurViewModel(IDialogService dialogService, INavigationService navigationService, IInviteService inviteService, IEvenementService evenementService) : base(dialogService, navigationService, inviteService, evenementService)
         //{
         //    //LoadEvenements();
         //}
 
-        private async void LoadEvenements()//int? pageNbr
+        private async Task LoadEvenements()//int? pageNbr
         {
+            //int itemsPerPage = 15;
             //if (pageNbr != null) PageNumber = (int)pageNbr;
-            (List<Evenement> evenements, int totalEvenements) = await EvenementService!.GetEvenementsPaginationAsync(PageNumber, 15);
-            TotalPages = totalEvenements;
+            (List<Evenement> evenements, int totalEvenements) = await EvenementService!.GetEvenementsPaginationAsync(PageNumber, ItemsPerPage);
+            TotalCount = totalEvenements;
+            //TotalPages = totalEvenements / ItemsPerPage;
+            TotalPages = (int)Math.Ceiling((double)TotalCount / ItemsPerPage);
             Evenements = new ObservableCollection<Evenement>(evenements);
         }
 
         [RelayCommand]
-        private void Actualiser() => LoadEvenements();
+        private async Task Actualiser() => await LoadEvenements();
 
         [RelayCommand]
         private async Task AjouterEvenementAsync() => await NavigationService.GoToAsync(nameof(EditionEvenementPage));
@@ -50,23 +57,26 @@ namespace EXAM_MAUI.ViewModels
         private async Task RetourAsync() => await NavigationService.GoBackAsync();
 
         [RelayCommand]
-        private void PreviousPage()
+        private async Task PreviousPage()
         {
-            if (PageNumber > 1 && PageNumber < TotalPages)
+            if (PageNumber > 1 && PageNumber <= TotalPages)
             {
                 PageNumber = --PageNumber;
-                LoadEvenements();
+                await LoadEvenements();
             }
         }
 
         [RelayCommand]
-        private void NextPage()
+        private async Task NextPage()
         {
-            if (PageNumber <= TotalPages)
+            if (PageNumber < TotalPages)
             {
                 PageNumber = ++PageNumber;
-                LoadEvenements();
+                await LoadEvenements();
             }
         }
+
+        [RelayCommand]
+        private async Task AfficherStatsAsync(Evenement evenement) => await NavigationService.GoToAsync(nameof(FicheStatPage), evenement);
     }
 }

@@ -85,14 +85,26 @@
       <Compile Update="Views\AgentPage.xaml.cs">
         <DependentUpon>AgentsPage.xaml</DependentUpon>
       </Compile>
+      <Compile Update="Views\FicheStatPage.xaml.cs">
+        <DependentUpon>FicheStatPage.xaml</DependentUpon>
+      </Compile>
     </ItemGroup>
 
     <ItemGroup>
       <MauiXaml Update="Views\EditionEvenementPage.xaml">
         <Generator>MSBuild:Compile</Generator>
       </MauiXaml>
+      <MauiXaml Update="Views\FicheStatPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </MauiXaml>
       <MauiXaml Update="Views\OrganisateurPage.xaml">
         <Generator>MSBuild:Compile</Generator>
       </MauiXaml>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="Views\EditionInvitePage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </None>
     </ItemGroup>
 </Project>

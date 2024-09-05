@@ -1,4 +1,5 @@
-﻿using Syncfusion.Maui.Themes;
+﻿using EXAM_MAUI.Views;
+using Syncfusion.Maui.Themes;
 
 namespace EXAM_MAUI
 {
@@ -6,22 +7,6 @@ namespace EXAM_MAUI
     {
         //[ObservableProperty]
         //public bool isDarkMode;
-
-        private bool isDarkMode;
-
-        public bool IsDarkMode
-        {
-            get => isDarkMode;
-            set
-            {
-                if (isDarkMode != value)
-                {
-                    isDarkMode = value;
-                    OnPropertyChanged();
-                    ChangeTheme(isDarkMode);
-                }
-            }
-        }
 
         public AppShell()
         {
@@ -35,6 +20,8 @@ namespace EXAM_MAUI
             Routing.RegisterRoute(nameof(AgentPage), typeof(AgentPage));
             Routing.RegisterRoute(nameof(OrganisateurPage), typeof(OrganisateurPage));
             Routing.RegisterRoute(nameof(EditionEvenementPage), typeof(EditionEvenementPage));
+            Routing.RegisterRoute(nameof(EditionInvitePage), typeof(EditionInvitePage));
+            Routing.RegisterRoute(nameof(FicheStatPage), typeof(FicheStatPage));
         }
 
         //private void OnThemeToggled(object sender, ToggledEventArgs e)
@@ -51,7 +38,7 @@ namespace EXAM_MAUI
         //    }
         //}
 
-        private void ChangeTheme(bool isDarkMode)
+        /*private void ChangeTheme(bool isDarkMode)
         {
             if (isDarkMode)
             {
@@ -62,6 +49,22 @@ namespace EXAM_MAUI
             {
                 Current.Resources.MergedDictionaries.Clear();
                 Current.Resources.MergedDictionaries.Add(new LightThemeColors());
+            }
+        }*/
+
+        private void ChangeTheme(object sender, ToggledEventArgs e)
+        {
+            bool isDarkMode = e.Value; // e.Value est true si le switch est activé, sinon false
+
+            if (isDarkMode)
+            {
+                // Activer le mode sombre
+                Application.Current!.UserAppTheme = AppTheme.Dark;
+            }
+            else
+            {
+                // Activer le mode clair
+                Application.Current!.UserAppTheme = AppTheme.Light;
             }
         }
     }

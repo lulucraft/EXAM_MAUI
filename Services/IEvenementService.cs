@@ -20,5 +20,7 @@ namespace EXAM_MAUI.Services
         //void SaveChanges();
 
         Task SaveChangesAsync();
+
+        Task<int> CountAsync();
     }
 }

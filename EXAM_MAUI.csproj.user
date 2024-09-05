@@ -9,12 +9,18 @@
     <MauiXaml Update="Views\EditionEvenementPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\FicheStatPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\OrganisateurPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>
   <ItemGroup>
     <None Update="Platforms\Windows\Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Views\EditionInvitePage.xaml">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

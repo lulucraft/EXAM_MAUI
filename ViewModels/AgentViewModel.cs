@@ -10,7 +10,6 @@ namespace EXAM_MAUI.ViewModels
 
         public AgentViewModel(IDialogService dialogService, INavigationService navigationService, IInviteService inviteService, IEvenementService evenementService) : base(dialogService, navigationService, inviteService, evenementService)
         {
-
         }
 
         [RelayCommand]
@@ -33,7 +32,7 @@ namespace EXAM_MAUI.ViewModels
 
             // Traitement invité
             invite.PresenceInvite = true;
-            InviteService.SaveChanges();
+            await InviteService.SaveChangesAsync();
         }
 
     }

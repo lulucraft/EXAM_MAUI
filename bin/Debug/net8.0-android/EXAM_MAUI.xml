@@ -52,12 +52,26 @@
         </member>
         <member name="T:EXAM_MAUI.ViewModels.AccueilViewModel">
             <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:EXAM_MAUI.ViewModels.AccueilViewModel.TotalEvenements">
+            <inheritdoc cref="F:EXAM_MAUI.ViewModels.AccueilViewModel.totalEvenements"/>
+        </member>
+        <member name="P:EXAM_MAUI.ViewModels.AccueilViewModel.TotalInvites">
+            <inheritdoc cref="F:EXAM_MAUI.ViewModels.AccueilViewModel.totalInvites"/>
         </member>
         <member name="F:EXAM_MAUI.ViewModels.AccueilViewModel.agentsCommand">
             <summary>The backing field for <see cref="P:EXAM_MAUI.ViewModels.AccueilViewModel.AgentsCommand"/>.</summary>
         </member>
         <member name="P:EXAM_MAUI.ViewModels.AccueilViewModel.AgentsCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:EXAM_MAUI.ViewModels.AccueilViewModel.AgentsAsync"/>.</summary>
+        </member>
+        <member name="F:EXAM_MAUI.ViewModels.AccueilViewModel.evenementsCommand">
+            <summary>The backing field for <see cref="P:EXAM_MAUI.ViewModels.AccueilViewModel.EvenementsCommand"/>.</summary>
+        </member>
+        <member name="P:EXAM_MAUI.ViewModels.AccueilViewModel.EvenementsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:EXAM_MAUI.ViewModels.AccueilViewModel.EvenementsAsync"/>.</summary>
         </member>
         <member name="T:EXAM_MAUI.ViewModels.AgentViewModel">
             <inheritdoc/>
@@ -82,9 +96,18 @@
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:EXAM_MAUI.ViewModels.EditionEvenementViewModel.TexteRecherche">
+            <inheritdoc cref="F:EXAM_MAUI.ViewModels.EditionEvenementViewModel._texteRecherche"/>
         </member>
         <member name="P:EXAM_MAUI.ViewModels.EditionEvenementViewModel.Evenement">
             <inheritdoc cref="F:EXAM_MAUI.ViewModels.EditionEvenementViewModel._evenement"/>
+        </member>
+        <member name="P:EXAM_MAUI.ViewModels.EditionEvenementViewModel.Invites">
+            <inheritdoc cref="F:EXAM_MAUI.ViewModels.EditionEvenementViewModel._invites"/>
         </member>
         <member name="F:EXAM_MAUI.ViewModels.EditionEvenementViewModel.enregistrerCommand">
             <summary>The backing field for <see cref="P:EXAM_MAUI.ViewModels.EditionEvenementViewModel.EnregistrerCommand"/>.</summary>
@@ -98,7 +121,60 @@
         <member name="P:EXAM_MAUI.ViewModels.EditionEvenementViewModel.AnnulerCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:EXAM_MAUI.ViewModels.EditionEvenementViewModel.AnnulerAsync"/>.</summary>
         </member>
+        <member name="F:EXAM_MAUI.ViewModels.EditionEvenementViewModel.rechercheCommand">
+            <summary>The backing field for <see cref="P:EXAM_MAUI.ViewModels.EditionEvenementViewModel.RechercheCommand"/>.</summary>
+        </member>
+        <member name="P:EXAM_MAUI.ViewModels.EditionEvenementViewModel.RechercheCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:EXAM_MAUI.ViewModels.EditionEvenementViewModel.Recherche"/>.</summary>
+        </member>
+        <member name="F:EXAM_MAUI.ViewModels.EditionEvenementViewModel.ajouterInviteCommand">
+            <summary>The backing field for <see cref="P:EXAM_MAUI.ViewModels.EditionEvenementViewModel.AjouterInviteCommand"/>.</summary>
+        </member>
+        <member name="P:EXAM_MAUI.ViewModels.EditionEvenementViewModel.AjouterInviteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:EXAM_MAUI.ViewModels.EditionEvenementViewModel.AjouterInviteAsync"/>.</summary>
+        </member>
+        <member name="F:EXAM_MAUI.ViewModels.EditionEvenementViewModel.associerInviteCommand">
+            <summary>The backing field for <see cref="P:EXAM_MAUI.ViewModels.EditionEvenementViewModel.AssocierInviteCommand"/>.</summary>
+        </member>
+        <member name="P:EXAM_MAUI.ViewModels.EditionEvenementViewModel.AssocierInviteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:EXAM_MAUI.ViewModels.EditionEvenementViewModel.AssocierInvite(EXAM_MAUI.Context.Models.Invite)"/>.</summary>
+        </member>
+        <member name="T:EXAM_MAUI.ViewModels.EditionInviteViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:EXAM_MAUI.ViewModels.EditionInviteViewModel.Invite">
+            <inheritdoc cref="F:EXAM_MAUI.ViewModels.EditionInviteViewModel._invite"/>
+        </member>
+        <member name="F:EXAM_MAUI.ViewModels.EditionInviteViewModel.enregistrerCommand">
+            <summary>The backing field for <see cref="P:EXAM_MAUI.ViewModels.EditionInviteViewModel.EnregistrerCommand"/>.</summary>
+        </member>
+        <member name="P:EXAM_MAUI.ViewModels.EditionInviteViewModel.EnregistrerCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:EXAM_MAUI.ViewModels.EditionInviteViewModel.EnregistrerAsync"/>.</summary>
+        </member>
+        <member name="F:EXAM_MAUI.ViewModels.EditionInviteViewModel.annulerCommand">
+            <summary>The backing field for <see cref="P:EXAM_MAUI.ViewModels.EditionInviteViewModel.AnnulerCommand"/>.</summary>
+        </member>
+        <member name="P:EXAM_MAUI.ViewModels.EditionInviteViewModel.AnnulerCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:EXAM_MAUI.ViewModels.EditionInviteViewModel.AnnulerAsync"/>.</summary>
+        </member>
+        <member name="T:EXAM_MAUI.ViewModels.FicheStatViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:EXAM_MAUI.ViewModels.FicheStatViewModel.Evenement">
+            <inheritdoc cref="F:EXAM_MAUI.ViewModels.FicheStatViewModel._evenement"/>
+        </member>
+        <member name="F:EXAM_MAUI.ViewModels.FicheStatViewModel.retourCommand">
+            <summary>The backing field for <see cref="P:EXAM_MAUI.ViewModels.FicheStatViewModel.RetourCommand"/>.</summary>
+        </member>
+        <member name="P:EXAM_MAUI.ViewModels.FicheStatViewModel.RetourCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:EXAM_MAUI.ViewModels.FicheStatViewModel.RetourAsync"/>.</summary>
+        </member>
         <member name="T:EXAM_MAUI.ViewModels.OrganisateurViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
@@ -110,25 +186,34 @@
             <inheritdoc cref="F:EXAM_MAUI.ViewModels.OrganisateurViewModel._evenements"/>
         </member>
         <member name="P:EXAM_MAUI.ViewModels.OrganisateurViewModel.TotalCount">
-            <inheritdoc cref="F:EXAM_MAUI.ViewModels.OrganisateurViewModel.totalCount"/>
-        </member>
-        <member name="P:EXAM_MAUI.ViewModels.OrganisateurViewModel.TotalPages">
-            <inheritdoc cref="F:EXAM_MAUI.ViewModels.OrganisateurViewModel.totalPages"/>
+            <inheritdoc cref="F:EXAM_MAUI.ViewModels.OrganisateurViewModel._totalCount"/>
         </member>
         <member name="P:EXAM_MAUI.ViewModels.OrganisateurViewModel.PageNumber">
-            <inheritdoc cref="F:EXAM_MAUI.ViewModels.OrganisateurViewModel.pageNumber"/>
+            <inheritdoc cref="F:EXAM_MAUI.ViewModels.OrganisateurViewModel._pageNumber"/>
+        </member>
+        <member name="P:EXAM_MAUI.ViewModels.OrganisateurViewModel.ItemsPerPage">
+            <inheritdoc cref="F:EXAM_MAUI.ViewModels.OrganisateurViewModel._itemsPerPage"/>
+        </member>
+        <member name="P:EXAM_MAUI.ViewModels.OrganisateurViewModel.TotalPages">
+            <inheritdoc cref="F:EXAM_MAUI.ViewModels.OrganisateurViewModel._totalPages"/>
         </member>
         <member name="F:EXAM_MAUI.ViewModels.OrganisateurViewModel.actualiserCommand">
             <summary>The backing field for <see cref="P:EXAM_MAUI.ViewModels.OrganisateurViewModel.ActualiserCommand"/>.</summary>
         </member>
         <member name="P:EXAM_MAUI.ViewModels.OrganisateurViewModel.ActualiserCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:EXAM_MAUI.ViewModels.OrganisateurViewModel.Actualiser"/>.</summary>
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:EXAM_MAUI.ViewModels.OrganisateurViewModel.Actualiser"/>.</summary>
         </member>
         <member name="F:EXAM_MAUI.ViewModels.OrganisateurViewModel.ajouterEvenementCommand">
             <summary>The backing field for <see cref="P:EXAM_MAUI.ViewModels.OrganisateurViewModel.AjouterEvenementCommand"/>.</summary>
         </member>
         <member name="P:EXAM_MAUI.ViewModels.OrganisateurViewModel.AjouterEvenementCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:EXAM_MAUI.ViewModels.OrganisateurViewModel.AjouterEvenementAsync"/>.</summary>
+        </member>
+        <member name="F:EXAM_MAUI.ViewModels.OrganisateurViewModel.editerEvenementCommand">
+            <summary>The backing field for <see cref="P:EXAM_MAUI.ViewModels.OrganisateurViewModel.EditerEvenementCommand"/>.</summary>
+        </member>
+        <member name="P:EXAM_MAUI.ViewModels.OrganisateurViewModel.EditerEvenementCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:EXAM_MAUI.ViewModels.OrganisateurViewModel.EditerEvenementAsync(EXAM_MAUI.Context.Models.Evenement)"/>.</summary>
         </member>
         <member name="F:EXAM_MAUI.ViewModels.OrganisateurViewModel.retourCommand">
             <summary>The backing field for <see cref="P:EXAM_MAUI.ViewModels.OrganisateurViewModel.RetourCommand"/>.</summary>
@@ -140,13 +225,19 @@
             <summary>The backing field for <see cref="P:EXAM_MAUI.ViewModels.OrganisateurViewModel.PreviousPageCommand"/>.</summary>
         </member>
         <member name="P:EXAM_MAUI.ViewModels.OrganisateurViewModel.PreviousPageCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:EXAM_MAUI.ViewModels.OrganisateurViewModel.PreviousPage"/>.</summary>
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:EXAM_MAUI.ViewModels.OrganisateurViewModel.PreviousPage"/>.</summary>
         </member>
         <member name="F:EXAM_MAUI.ViewModels.OrganisateurViewModel.nextPageCommand">
             <summary>The backing field for <see cref="P:EXAM_MAUI.ViewModels.OrganisateurViewModel.NextPageCommand"/>.</summary>
         </member>
         <member name="P:EXAM_MAUI.ViewModels.OrganisateurViewModel.NextPageCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:EXAM_MAUI.ViewModels.OrganisateurViewModel.NextPage"/>.</summary>
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:EXAM_MAUI.ViewModels.OrganisateurViewModel.NextPage"/>.</summary>
+        </member>
+        <member name="F:EXAM_MAUI.ViewModels.OrganisateurViewModel.afficherStatsCommand">
+            <summary>The backing field for <see cref="P:EXAM_MAUI.ViewModels.OrganisateurViewModel.AfficherStatsCommand"/>.</summary>
+        </member>
+        <member name="P:EXAM_MAUI.ViewModels.OrganisateurViewModel.AfficherStatsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:EXAM_MAUI.ViewModels.OrganisateurViewModel.AfficherStatsAsync(EXAM_MAUI.Context.Models.Evenement)"/>.</summary>
         </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
             <summary>
@@ -841,14 +932,29 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Notes">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Notes" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TotalEvenements">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TotalEvenements" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TotalInvites">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TotalInvites" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.InputCode">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "InputCode" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Title">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Title" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TexteRecherche">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TexteRecherche" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Evenement">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Evenement" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Invites">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Invites" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Invite">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Invite" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Evenements">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Evenements" generated properties.</summary>
@@ -856,11 +962,14 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TotalCount">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TotalCount" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TotalPages">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TotalPages" generated properties.</summary>
-        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.PageNumber">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "PageNumber" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ItemsPerPage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ItemsPerPage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TotalPages">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TotalPages" generated properties.</summary>
         </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
             <summary>
@@ -883,14 +992,29 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Notes">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Notes" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TotalEvenements">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TotalEvenements" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TotalInvites">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TotalInvites" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.InputCode">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "InputCode" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Title">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Title" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TexteRecherche">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TexteRecherche" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Evenement">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Evenement" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Invites">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Invites" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Invite">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Invite" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Evenements">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Evenements" generated properties.</summary>
@@ -898,11 +1022,14 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TotalCount">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TotalCount" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TotalPages">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TotalPages" generated properties.</summary>
-        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.PageNumber">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "PageNumber" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ItemsPerPage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ItemsPerPage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TotalPages">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TotalPages" generated properties.</summary>
         </member>
     </members>
 </doc>

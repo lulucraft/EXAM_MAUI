@@ -16,9 +16,11 @@ namespace EXAM_MAUI.Services.Implementations
             int totalEvenements = await context.Evenements.CountAsync();
             List<Evenement> evenements = await context.Evenements
                 .Include(e => e.SousEvenements)
+                .Include(e => e.IdInvites)
                 .OrderBy(i => i.IdEvenement)
                 .Skip((pageNbr - 1) * pageSize)
                 .Take(pageSize)
+                .AsNoTracking()
                 .ToListAsync();
             return (evenements, totalEvenements);
             //return await context.Evenements.Include(e => e.SousEvenements).ToListAsync();
@@ -47,5 +49,7 @@ namespace EXAM_MAUI.Services.Implementations
         //}
 
         public async Task SaveChangesAsync() => await context.SaveChangesAsync();
+
+        public async Task<int> CountAsync() => await context.Evenements.CountAsync();
     }
 }

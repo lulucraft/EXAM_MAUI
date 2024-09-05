@@ -1,66 +1,78 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\",
+  "WorkspaceRootPath": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|e:\\users\\lucas\\source\\repos\\exam_maui\\viewmodels\\editionevenementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|solutionrelative:viewmodels\\editionevenementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|c:\\users\\lucas\\source\\repos\\exam_maui\\views\\fichestatpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|solutionrelative:views\\fichestatpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|e:\\users\\lucas\\source\\repos\\exam_maui\\viewmodels\\organisateurviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|solutionrelative:viewmodels\\organisateurviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|e:\\users\\lucas\\source\\repos\\exam_maui\\views\\organisateurpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|c:\\users\\lucas\\source\\repos\\exam_maui\\views\\organisateurpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|solutionrelative:views\\organisateurpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|e:\\users\\lucas\\source\\repos\\exam_maui\\views\\agentpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|solutionrelative:views\\agentpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|c:\\users\\lucas\\source\\repos\\exam_maui\\viewmodels\\editionevenementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|solutionrelative:viewmodels\\editionevenementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|e:\\users\\lucas\\source\\repos\\exam_maui\\views\\editionevenementpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|c:\\users\\lucas\\source\\repos\\exam_maui\\views\\editionevenementpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|solutionrelative:views\\editionevenementpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|e:\\users\\lucas\\source\\repos\\exam_maui\\services\\iinviteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|solutionrelative:services\\iinviteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|e:\\users\\lucas\\source\\repos\\exam_maui\\viewmodels\\agentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|solutionrelative:viewmodels\\agentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|e:\\users\\lucas\\source\\repos\\exam_maui\\views\\accueilpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|solutionrelative:views\\accueilpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|e:\\users\\lucas\\source\\repos\\exam_maui\\resources\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|solutionrelative:resources\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|e:\\users\\lucas\\source\\repos\\exam_maui\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|c:\\users\\lucas\\source\\repos\\exam_maui\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|e:\\users\\lucas\\source\\repos\\exam_maui\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|c:\\users\\lucas\\source\\repos\\exam_maui\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|solutionrelative:appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|e:\\users\\lucas\\source\\repos\\exam_maui\\services\\ievenementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|solutionrelative:services\\ievenementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|c:\\users\\lucas\\source\\repos\\exam_maui\\services\\implementations\\evenementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|solutionrelative:services\\implementations\\evenementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|e:\\users\\lucas\\source\\repos\\exam_maui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|c:\\users\\lucas\\source\\repos\\exam_maui\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|c:\\users\\lucas\\source\\repos\\exam_maui\\services\\implementations\\inviteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|solutionrelative:services\\implementations\\inviteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|c:\\users\\lucas\\source\\repos\\exam_maui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|e:\\users\\lucas\\source\\repos\\exam_maui\\resources\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|solutionrelative:resources\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|c:\\users\\lucas\\source\\repos\\exam_maui\\viewmodels\\organisateurviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|solutionrelative:viewmodels\\organisateurviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|e:\\users\\lucas\\source\\repos\\exam_maui\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|solutionrelative:viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|c:\\users\\lucas\\source\\repos\\exam_maui\\viewmodels\\editioninviteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|solutionrelative:viewmodels\\editioninviteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|c:\\users\\lucas\\source\\repos\\exam_maui\\views\\editioninvitepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|solutionrelative:views\\editioninvitepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|c:\\users\\lucas\\source\\repos\\exam_maui\\views\\accueilpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|solutionrelative:views\\accueilpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|c:\\users\\lucas\\source\\repos\\exam_maui\\services\\implementations\\navigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|solutionrelative:services\\implementations\\navigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|c:\\users\\lucas\\source\\repos\\exam_maui\\views\\agentpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|solutionrelative:views\\agentpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|c:\\users\\lucas\\source\\repos\\exam_maui\\services\\iinviteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|solutionrelative:services\\iinviteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|c:\\users\\lucas\\source\\repos\\exam_maui\\viewmodels\\agentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D9B407D-723C-49D3-8732-FAD7B8BFD7EB}|EXAM_MAUI.csproj|solutionrelative:viewmodels\\agentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -83,201 +95,238 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "IInviteService.cs",
-              "DocumentMoniker": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Services\\IInviteService.cs",
-              "RelativeDocumentMoniker": "Services\\IInviteService.cs",
-              "ToolTip": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Services\\IInviteService.cs",
-              "RelativeToolTip": "Services\\IInviteService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA2AAAAAAAAAA==",
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\AppShell.xaml.cs",
+              "RelativeToolTip": "AppShell.xaml.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAowAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T14:20:22.932Z",
+              "WhenOpened": "2024-09-05T01:01:38.377Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EditionEvenementPage.xaml",
-              "DocumentMoniker": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Views\\EditionEvenementPage.xaml",
-              "RelativeDocumentMoniker": "Views\\EditionEvenementPage.xaml",
-              "ToolTip": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Views\\EditionEvenementPage.xaml",
-              "RelativeToolTip": "Views\\EditionEvenementPage.xaml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "OverriddenGroupName": "Views",
-              "WhenOpened": "2024-09-04T07:19:26.545Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EditionEvenementViewModel.cs",
-              "DocumentMoniker": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\ViewModels\\EditionEvenementViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\EditionEvenementViewModel.cs",
-              "ToolTip": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\ViewModels\\EditionEvenementViewModel.cs",
-              "RelativeToolTip": "ViewModels\\EditionEvenementViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABEAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "InviteService.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Services\\Implementations\\InviteService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\InviteService.cs",
+              "ToolTip": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Services\\Implementations\\InviteService.cs",
+              "RelativeToolTip": "Services\\Implementations\\InviteService.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCsAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "OverriddenGroupName": "ViewModels",
-              "WhenOpened": "2024-09-04T07:03:30.876Z",
+              "WhenOpened": "2024-09-05T00:44:52.267Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Styles.xaml",
-              "DocumentMoniker": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Resources\\Styles.xaml",
-              "RelativeDocumentMoniker": "Resources\\Styles.xaml",
-              "ToolTip": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Resources\\Styles.xaml",
-              "RelativeToolTip": "Resources\\Styles.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-04T12:08:52.444Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OrganisateurViewModel.cs",
-              "DocumentMoniker": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\ViewModels\\OrganisateurViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\OrganisateurViewModel.cs",
-              "ToolTip": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\ViewModels\\OrganisateurViewModel.cs",
-              "RelativeToolTip": "ViewModels\\OrganisateurViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAVAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "EvenementService.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Services\\Implementations\\EvenementService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\EvenementService.cs",
+              "ToolTip": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Services\\Implementations\\EvenementService.cs",
+              "RelativeToolTip": "Services\\Implementations\\EvenementService.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBYAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "OverriddenGroupName": "ViewModels",
-              "WhenOpened": "2024-09-04T06:51:52.568Z",
+              "WhenOpened": "2024-09-04T23:38:45.652Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "EditionEvenementViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\ViewModels\\EditionEvenementViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\EditionEvenementViewModel.cs",
+              "ToolTip": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\ViewModels\\EditionEvenementViewModel.cs",
+              "RelativeToolTip": "ViewModels\\EditionEvenementViewModel.cs",
+              "ViewState": "AQIAAHcAAAAAAAAAAAAIwH4AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T22:09:00.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EditionEvenementPage.xaml",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Views\\EditionEvenementPage.xaml",
+              "RelativeDocumentMoniker": "Views\\EditionEvenementPage.xaml",
+              "ToolTip": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Views\\EditionEvenementPage.xaml",
+              "RelativeToolTip": "Views\\EditionEvenementPage.xaml",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAswEkAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-04T18:40:21.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FicheStatPage.xaml",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Views\\FicheStatPage.xaml",
+              "RelativeDocumentMoniker": "Views\\FicheStatPage.xaml",
+              "ToolTip": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Views\\FicheStatPage.xaml",
+              "RelativeToolTip": "Views\\FicheStatPage.xaml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAADUAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-04T19:55:15.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "OrganisateurPage.xaml",
-              "DocumentMoniker": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Views\\OrganisateurPage.xaml",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Views\\OrganisateurPage.xaml",
               "RelativeDocumentMoniker": "Views\\OrganisateurPage.xaml",
-              "ToolTip": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Views\\OrganisateurPage.xaml",
+              "ToolTip": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Views\\OrganisateurPage.xaml",
               "RelativeToolTip": "Views\\OrganisateurPage.xaml",
-              "ViewState": "AgIAACsAAAAAAAAAAADgv0oAAAAXAAAAAAAAAA==",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAAADwAAACtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-09-03T13:44:58.128Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AgentPage.xaml",
-              "DocumentMoniker": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Views\\AgentPage.xaml",
-              "RelativeDocumentMoniker": "Views\\AgentPage.xaml",
-              "ToolTip": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Views\\AgentPage.xaml",
-              "RelativeToolTip": "Views\\AgentPage.xaml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-04T12:24:28.479Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "AppShell.xaml",
-              "DocumentMoniker": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\AppShell.xaml",
               "RelativeDocumentMoniker": "AppShell.xaml",
-              "ToolTip": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\AppShell.xaml",
               "RelativeToolTip": "AppShell.xaml",
-              "ViewState": "AgIAAA4AAAAAAAAAAADgvyMAAAAaAAAAAAAAAA==",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAqwHIAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-04T12:15:13.07Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AgentViewModel.cs",
-              "DocumentMoniker": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\ViewModels\\AgentViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\AgentViewModel.cs",
-              "ToolTip": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\ViewModels\\AgentViewModel.cs",
-              "RelativeToolTip": "ViewModels\\AgentViewModel.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBsAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "OverriddenGroupName": "ViewModels",
-              "WhenOpened": "2024-09-03T11:31:08.816Z",
+              "WhenOpened": "2024-09-04T20:49:25.063Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "AccueilPage.xaml",
-              "DocumentMoniker": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Views\\AccueilPage.xaml",
-              "RelativeDocumentMoniker": "Views\\AccueilPage.xaml",
-              "ToolTip": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Views\\AccueilPage.xaml",
-              "RelativeToolTip": "Views\\AccueilPage.xaml",
-              "ViewState": "AgIAAAgAAAAAAAAAAAD4vyAAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "OverriddenGroupName": "Views",
-              "WhenOpened": "2024-09-03T11:11:53.644Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AppShell.xaml.cs",
-              "DocumentMoniker": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\AppShell.xaml.cs",
-              "RelativeDocumentMoniker": "AppShell.xaml.cs",
-              "ToolTip": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\AppShell.xaml.cs",
-              "RelativeToolTip": "AppShell.xaml.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAlwDUAAAAxAAAAAAAAAA==",
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "MauiProgram.cs",
+              "ToolTip": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\MauiProgram.cs",
+              "RelativeToolTip": "MauiProgram.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwCMAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T12:11:17.23Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Colors.xaml",
-              "DocumentMoniker": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Resources\\Colors.xaml",
-              "RelativeDocumentMoniker": "Resources\\Colors.xaml",
-              "ToolTip": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Resources\\Colors.xaml",
-              "RelativeToolTip": "Resources\\Colors.xaml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-04T12:41:10.606Z",
+              "WhenOpened": "2024-09-05T00:37:18.501Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "IEvenementService.cs",
-              "DocumentMoniker": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Services\\IEvenementService.cs",
-              "RelativeDocumentMoniker": "Services\\IEvenementService.cs",
-              "ToolTip": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Services\\IEvenementService.cs",
-              "RelativeToolTip": "Services\\IEvenementService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAA4AAAAAAAAAA==",
+              "Title": "EditionInviteViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\ViewModels\\EditionInviteViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\EditionInviteViewModel.cs",
+              "ToolTip": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\ViewModels\\EditionInviteViewModel.cs",
+              "RelativeToolTip": "ViewModels\\EditionInviteViewModel.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAqwBkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T08:09:33.997Z",
+              "WhenOpened": "2024-09-05T00:04:52.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-05T00:43:44.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrganisateurViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\ViewModels\\OrganisateurViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\OrganisateurViewModel.cs",
+              "ToolTip": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\ViewModels\\OrganisateurViewModel.cs",
+              "RelativeToolTip": "ViewModels\\OrganisateurViewModel.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T00:05:05.167Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "App.xaml",
-              "DocumentMoniker": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\App.xaml",
-              "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\App.xaml",
-              "RelativeToolTip": "App.xaml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "EditionInvitePage.xaml",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Views\\EditionInvitePage.xaml",
+              "RelativeDocumentMoniker": "Views\\EditionInvitePage.xaml",
+              "ToolTip": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Views\\EditionInvitePage.xaml",
+              "RelativeToolTip": "Views\\EditionInvitePage.xaml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACMAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-04T12:17:14.245Z",
+              "WhenOpened": "2024-09-04T16:48:24.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AccueilPage.xaml",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Views\\AccueilPage.xaml",
+              "RelativeDocumentMoniker": "Views\\AccueilPage.xaml",
+              "ToolTip": "Views/AccueilPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "OverriddenGroupName": "Views",
+              "OverriddenToolTip": "Views/AccueilPage.xaml",
+              "WhenOpened": "2024-09-04T20:05:00.601Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "BaseViewModel.cs",
-              "DocumentMoniker": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\ViewModels\\BaseViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\BaseViewModel.cs",
-              "ToolTip": "E:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\ViewModels\\BaseViewModel.cs",
-              "RelativeToolTip": "ViewModels\\BaseViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Title": "NavigationService.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Services\\Implementations\\NavigationService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\NavigationService.cs",
+              "ToolTip": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Services\\Implementations\\NavigationService.cs",
+              "RelativeToolTip": "Services\\Implementations\\NavigationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T11:30:51.564Z",
+              "WhenOpened": "2024-09-04T20:55:12.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AgentPage.xaml",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Views\\AgentPage.xaml",
+              "RelativeDocumentMoniker": "Views\\AgentPage.xaml",
+              "ToolTip": "Views/AgentPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "OverriddenGroupName": "Views",
+              "OverriddenToolTip": "Views/AgentPage.xaml",
+              "WhenOpened": "2024-09-04T12:24:28.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IInviteService.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Services\\IInviteService.cs",
+              "RelativeDocumentMoniker": "Services\\IInviteService.cs",
+              "ToolTip": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\Services\\IInviteService.cs",
+              "RelativeToolTip": "Services\\IInviteService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAawBEAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T17:46:09.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AgentViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\ViewModels\\AgentViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\AgentViewModel.cs",
+              "ToolTip": "C:\\Users\\lucas\\source\\repos\\EXAM_MAUI\\ViewModels\\AgentViewModel.cs",
+              "RelativeToolTip": "ViewModels\\AgentViewModel.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAwwCIAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "OverriddenGroupName": "ViewModels",
+              "WhenOpened": "2024-09-03T11:31:08.816Z",
               "EditorCaption": ""
             }
           ]
