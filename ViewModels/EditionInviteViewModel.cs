@@ -69,14 +69,14 @@ namespace EXAM_MAUI.ViewModels
             }
             else
             {
-                // Mode ajoutgq
+                // Mode ajout
                 InviteService!.UpdateInvite(Invite);
             }
 
             await InviteService!.SaveChangesAsync();
 
             // Envoi mail avec CodeInvite
-            _ = SendEmailAsync(Invite.EmailInvite, "Votre accès Invité", $"Voici votre code d'invité : {Invite.CodeInvite}");
+            await SendEmailAsync(Invite.EmailInvite, "Votre accès Invité", $"Voici votre code d'invité : {Invite.CodeInvite}");
             
             await NavigationService.GoBackAsync();
 
@@ -106,7 +106,7 @@ namespace EXAM_MAUI.ViewModels
         {
             try
             {
-                string fromEmail = "jeanmi@akrone.fr";
+                string fromEmail = "tp@champatux.fr";
                 string password = "34rV880SuCqXDA26969";
 
                 // Configuration client SMTP
